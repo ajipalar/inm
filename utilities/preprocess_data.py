@@ -400,13 +400,15 @@ def preprocess_spec_table(input_path,
                           prey_colname,
                           enforce_bait_remapping = False,
                           filter_kw = None,
-                          mode = "cullin"):
+                          mode = "cullin",
+                          ms_score_colname = "SaintScore",):
     spec_table, composites, prey_condition_dict, sid_dict, sim_dict = get_spec_table_and_composites(
             input_path,
             sheet_nums,
             prey_colname=prey_colname,
             enforce_bait_remapping=enforce_bait_remapping,
-            return_many = True) 
+            return_many = True,
+            ms_score_colname = ms_score_colname) 
 
     spec_table = get_spec_table(xlsx_path = input_path,
                                 sheet_nums = sheet_nums,

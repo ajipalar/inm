@@ -40,6 +40,9 @@ class RunConfiguration(NamedTuple):
     synthetic_N : int = None
     synthetic_Mtrue : int = None
     synthetic_rseed : int = None
+    prey_colname : str = "PreyGene"
+    ms_score_colname : str = "SaintScore"
+    sheet_nums : int = 3
 
 
 def from_template(template: RunConfiguration, **kwargs) -> RunConfiguration:
@@ -1152,3 +1155,14 @@ se_sr_sc_10k_mock = from_template(tenK_template,
                           model_output_dirpath = root_dir / "results/se_sr_sc_10k_mock",
                           model_name = "model23_se_sr_sc",
                           filter_kw = "mock",)
+
+p53_dev = from_template(
+    mini_model23_n_all_20k,
+    model_output_dirpath = "../results/p53_dev",
+    model_input_fpath = "../data/p53/MCF7_p53_GFP control.xlsx",
+    num_warmup = 0,
+    num_samples = 10,
+    prey_colname = "PreyGene.x",
+    ms_score_colname = "SaintScore.x",
+    sheet_nums = 1,
+)

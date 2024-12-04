@@ -82,6 +82,9 @@ def main(
     synthetic_N = None,
     synthetic_Mtrue = None,
     synthetic_rseed = None,
+    prey_colname = "PreyGene",
+    ms_score_colname = "SaintScore",
+    sheet_nums : int = 3,
 ):
     """
     Params:
@@ -136,10 +139,11 @@ def main(
     preprocess_inputs(
             input_path = model_input_fpath,
             output_dir = preprocessor_output_dirpath,
-            sheet_nums = 3,
-            prey_colname = "PreyGene",
+            sheet_nums = sheet_nums,
+            prey_colname = prey_colname,
             enforce_bait_remapping = True,
             filter_kw = filter_kw,
+            ms_score_colname = ms_score_colname,
             )
     logging.info("copy preprocessed inputs to modeling dir")
     # Copy the files from the preprocessed data to the modeling output dir
