@@ -1,0 +1,32 @@
+INFO:root:PARAMS
+INFO:root:    In path: ../data/tip49/NIHMS252278-supplement-2.xls
+INFO:root:    sheet_nums 1
+INFO:root:    bait_col_name Bait
+INFO:root:    prey_colname: Prey
+INFO:root:    ms_score_colname : SAINT
+INFO:root:    ctrl_col: ctrlCounts
+INFO:root:    spec_colname: Spec
+INFO:root:    spec_count_sep: |
+INFO:root:    bait_parser_strat: all
+INFO:root:    control_handle_strat: all
+INFO:root:    prey_parser_strat: general
+INFO:root:    enforce_bait_rempapping: True
+INFO:root:sheet 0
+INFO:root:DF SHAPE : (5521, 9)
+WARNING:root:N corrupt lines : 12
+WARNING:root:corrupt line 734 : ('ACTR6', datetime.datetime(2010, 9, 11, 0, 0), 0.0)
+WARNING:root:corrupt line 1349 : ('INO80E', datetime.datetime(2010, 9, 7, 0, 0), 0.0)
+WARNING:root:corrupt line 2745 : ('LIN9', datetime.datetime(2010, 9, 7, 0, 0), 0.0)
+WARNING:root:corrupt line 2815 : ('LIN9', datetime.datetime(2010, 9, 2, 0, 0), 0.96)
+WARNING:root:corrupt line 3350 : ('NUFIP1', datetime.datetime(2010, 9, 9, 0, 0), 0.0)
+WARNING:root:corrupt line 3703 : ('TP53', datetime.datetime(2010, 9, 11, 0, 0), 0.96)
+WARNING:root:corrupt line 3799 : ('TP53', datetime.datetime(2010, 9, 7, 0, 0), 0.98)
+WARNING:root:corrupt line 3862 : ('TP53', datetime.datetime(2010, 9, 2, 0, 0), 0.98)
+WARNING:root:corrupt line 3883 : ('TP53', datetime.datetime(2010, 9, 9, 0, 0), 0.0)
+WARNING:root:corrupt line 5320 : ('ZNHIT1', datetime.datetime(2010, 9, 7, 0, 0), 0.49)
+WARNING:root:corrupt line 5374 : ('ZNHIT1', datetime.datetime(2010, 9, 2, 0, 0), 0.49)
+WARNING:root:corrupt line 5398 : ('ZNHIT1', datetime.datetime(2010, 9, 9, 0, 0), 0.45)
+INFO:root:DF SHAPE : (5509, 9)
+INFO:root:N Bait 27
+WARNING:root:1 bait not mapped to prey
+WARNING:root:Unmapped bait {'PRRC2B'}

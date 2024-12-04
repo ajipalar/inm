@@ -1,0 +1,23 @@
+INFO:root:PARAMS
+INFO:root:    In path: ../data/cullin/1-s2.0-S1931312819302537-mmc2.xlsx
+INFO:root:    sheet_nums 3
+INFO:root:    bait_col_name Bait
+INFO:root:    prey_colname: PreyGene
+INFO:root:    ms_score_colname : SaintScore
+INFO:root:    ctrl_col: ctrlCounts
+INFO:root:    spec_colname: Spec
+INFO:root:    spec_count_sep: |
+INFO:root:    bait_parser_strat: first_four
+INFO:root:    control_handle_strat: all
+INFO:root:    prey_parser_strat: general
+INFO:root:    enforce_bait_rempapping: True
+INFO:root:sheet 0
+INFO:root:DF SHAPE : (6555, 15)
+INFO:root:DF SHAPE : (6555, 15)
+INFO:root:sheet 1
+INFO:root:DF SHAPE : (6598, 15)
+INFO:root:DF SHAPE : (6598, 15)
+INFO:root:sheet 2
+INFO:root:DF SHAPE : (8743, 15)
+INFO:root:DF SHAPE : (8743, 15)
+INFO:root:N Bait 4

@@ -1,0 +1,15 @@
+INFO:root:PARAMS
+INFO:root:    In path: ../data/gordon_sars_cov_2/41586_2020_2286_MOESM5_ESM.xlsx
+INFO:root:    sheet_nums 1
+INFO:root:    bait_col_name Bait
+INFO:root:    prey_colname: PreyGene
+INFO:root:    ms_score_colname : SaintScore
+INFO:root:    ctrl_col: CtrlCounts
+INFO:root:    spec_colname: Spec
+INFO:root:    spec_count_sep: |
+INFO:root:    bait_parser_strat: all
+INFO:root:    control_handle_strat: all
+INFO:root:    prey_parser_strat: general
+INFO:root:sheet 0
+INFO:root:DF SHAPE : (22153, 10)
+INFO:root:DF SHAPE : (22153, 10)
