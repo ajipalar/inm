@@ -43,6 +43,7 @@ class RunConfiguration(NamedTuple):
     prey_colname : str = "PreyGene"
     ms_score_colname : str = "SaintScore"
     sheet_nums : int = 3
+    n_ctrl_replicates : int = 12
 
 
 def from_template(template: RunConfiguration, **kwargs) -> RunConfiguration:
@@ -1165,4 +1166,5 @@ p53_dev = from_template(
     prey_colname = "PreyGene.x",
     ms_score_colname = "SaintScore.x",
     sheet_nums = 1,
+    n_ctrl_replicates = 4,
 )

@@ -85,6 +85,7 @@ def main(
     prey_colname = "PreyGene",
     ms_score_colname = "SaintScore",
     sheet_nums : int = 3,
+    n_ctrl_replicates = 12,
 ):
     """
     Params:
@@ -144,6 +145,7 @@ def main(
             enforce_bait_remapping = True,
             filter_kw = filter_kw,
             ms_score_colname = ms_score_colname,
+            n_ctrl_replicates = n_ctrl_replicates,
             )
     logging.info("copy preprocessed inputs to modeling dir")
     # Copy the files from the preprocessed data to the modeling output dir

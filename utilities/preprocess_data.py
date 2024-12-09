@@ -384,12 +384,13 @@ def log_unmapped_bait(d):
         logging.warning(f"{len(u)} bait not found in prey")
         logging.warning(f"unfound bait {u}")
 
-def preprocess_cullin(prey_colname="PreyGene", enforce_bait_remapping=False):
+def preprocess_cullin(prey_colname="PreyGene", enforce_bait_remapping=False, n_ctrl_replicates = 12):
     spec_table, composites = get_spec_table_and_composites(
             _raw_data_paths["cullin"],
             3,
             prey_colname=prey_colname,
-            enforce_bait_remapping=enforce_bait_remapping) 
+            enforce_bait_remapping=enforce_bait_remapping,
+            n_ctrl_replicates = n_ctrl_replicates) 
     log_unmapped_bait(composites)
     
     write_tables(spec_table, composites, output_dir = root_dir / "data/processed/cullin")
@@ -401,7 +402,8 @@ def preprocess_spec_table(input_path,
                           enforce_bait_remapping = False,
                           filter_kw = None,
                           mode = "cullin",
-                          ms_score_colname = "SaintScore",):
+                          ms_score_colname = "SaintScore",
+                          n_ctrl_replicates = 12):
     spec_table, composites, prey_condition_dict, sid_dict, sim_dict = get_spec_table_and_composites(
             input_path,
             sheet_nums,
@@ -413,7 +415,8 @@ def preprocess_spec_table(input_path,
     spec_table = get_spec_table(xlsx_path = input_path,
                                 sheet_nums = sheet_nums,
                                 prey_colname = prey_colname,
-                                enforce_bait_remapping = enforce_bait_remapping)
+                                enforce_bait_remapping = enforce_bait_remapping,
+                                n_ctrl_replicates = n_ctrl_replicates)
     spec_table = filter_spec_table(spec_table, filter_kw, mode = mode)
     composites = filter_composite_table(
             composites,
@@ -495,7 +498,8 @@ def filter_spec_table(spec_table, filter_kw = None, mode = "cullin") -> pd.DataF
         return spec_table
 
    
-def filter_composite_table(composites, filter_kw, sid_dict, mode):
+def filter_composite_table(composites, filter_kw, sid_dict, mode,
+                           n_expected_conditions = 10):
     """
     Filters the composite_table if the filter_kw is set.
     """
@@ -505,7 +509,8 @@ def filter_composite_table(composites, filter_kw, sid_dict, mode):
                 allowed_purifications = []
                 assert filter_kw in ("vif", "mock", "wt", "all")
                 keylist = list(sid_dict.keys())
-                assert len(keylist) == 10, "Expected 10 types of conditions in cullin input"
+                n_found_conditions = len(keylist)
+                logging.log(n_found_conditions == n_expected_conditions, f"Expected {n_expected_conditions} types of conditions in cullin input. Found {n_found_conditions}\nThese are {keylist}")
                 for key, value in sid_dict.items():
                     if filter_kw in key:
                         allowed_purifications.append(value)
