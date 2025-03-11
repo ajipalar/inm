@@ -2888,7 +2888,8 @@ def model23_n_(model_data):
     # has a large std (near 1) to allow edges to be 0 even in cases with high profile similarity
     # The score also allows edges to be 1 in cases with low profile similarity
     # This case is taken care of by the r_restraint
-
+    
+    #jax.debug.print("R_pairwise_matrix.shape {x}", x=R_pairwise_matrix.shape)
     r_z_restraint = dist.Normal(R_pairwise_matrix, 2) #0.7)
     r_z_score = jnp.sum(r_z_restraint.log_prob(z)) 
     numpyro.factor("r_z_score_", r_z_score)
@@ -2898,6 +2899,8 @@ def model23_n_(model_data):
     r_score = jnp.sum(r_restraint.log_prob(z)) 
     numpyro.factor("r_score_", r_score)
     numpyro.deterministic("r_score", -r_score)
+
+    #jax.debug.print("r_score {x}", x= -r_score)
 
     # N edges restraint
     #n_edges = jnp.sum(aij) // 2
@@ -2918,8 +2921,10 @@ def model23_n(model_data):
     N = model_data["N"]
     NxN = N * N
     saint_max_pair_score_pairwise_matrix, z = model23_n_(model_data)
+    #jax.debug.print("zshape {x}", x=z.shape)
     s_restraint = dist.Normal(saint_max_pair_score_pairwise_matrix-0.5, saint_max_pair_score_pairwise_matrix ** 2 + 1e-2)
     s_score = jnp.sum(s_restraint.log_prob(z)) 
+    #jax.debug.print("sscore {x}", x=s_score)
     numpyro.factor("s_score_", s_score)
     numpyro.deterministic("s_score", -s_score)
 
@@ -3031,7 +3036,7 @@ def model23_n_p_ne(model_data):
     _, R_pairwise_matrix, z = model23_n_prior_(model_data) 
     aij = Z2A(z)
     # # Set the diagonal to 0
-
+    diag_indices = jnp.diag_indices(model_data["N"]) 
     aij = aij.at[diag_indices].set(0)
     aij = jnp.tril(aij, k=-1)
     aij = (aij + aij.T)
