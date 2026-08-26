@@ -1,0 +1,49 @@
+# Version control / editor cruft
+#
+# NOTE: the legacy (non-BuildKit) builder does not match a bare pattern like
+# ".snakemake" at every depth the way .gitignore does — it only matches at the
+# build-context root. Every pattern below is prefixed with **/ so it matches
+# regardless of nesting (e.g. examples/cullin_example/.snakemake) and
+# regardless of which builder is active.
+**/.git
+**/.gitignore
+**/*~
+**/*.un~
+**/.DS_Store
+
+# Tooling caches
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.ruff_cache
+**/.mypy_cache
+**/.snakemake
+**/*.egg-info
+**/dist
+**/build
+
+# Presentation / binary files not needed to run the pipeline
+**/*.key
+**/*.pdf
+**/notebooks
+
+# Orphaned/legacy directories not wired into the Snakemake DAG
+**/sm1
+
+# Generated results (baked images shouldn't carry run outputs)
+results
+examples/cullin_example/results
+
+# Raw/derived example data pulled or generated at runtime — bind-mount instead
+examples/cullin_example/data/cullin
+examples/cullin_example/data/cullin_formatted
+examples/cullin_example/data/cullin_model
+examples/cullin_example/data/external
+
+# Top-level data/ holds many multi-GB source datasets unrelated to the
+# containerized pipeline; only the small, git-tracked PDB PPI reference
+# TSVs (data/processed/references/**) are needed and kept below.
+data
+!data/processed
+!data/processed/references
+!data/processed/references/**

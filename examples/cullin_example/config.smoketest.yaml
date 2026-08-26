@@ -1,0 +1,16 @@
+# examples/cullin_example/config.smoketest.yaml
+# Partial override for a fast smoke-test run of the full pipeline. Deep-merged
+# on top of config.yaml via `snakemake --configfile config.smoketest.yaml`
+# (only the keys below are overridden; everything else comes from config.yaml).
+#
+# Verifies output *format* only — 2 chains x 10 samples is not a statistically
+# meaningful posterior. model.name must be a real inm.model.model23.MODEL_REGISTRY
+# key (it also selects which model runs, not just an output-dir label); model23_n_p
+# is the cheapest variant (just the shared z-adjacency prior, no extra score terms)
+# and writes to results/model23_n_p/, so it never touches a real run's
+# results/model23_n_p_s_r_d/.
+model:
+  name: model23_n_p
+  num_warmup: 5
+  num_samples: 10
+  num_chains: 2

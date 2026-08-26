@@ -1,0 +1,33 @@
+Query         sp|Q13951|CBFB_HUMAN Core-binding factor subunit beta
+Match_columns 146
+No_of_seqs    1 out of 1
+Neff          1.00000
+Searched_HMMs 1
+Date          Thu Mar 26 00:00:00 2026
+Command       hhblits -i Q13951.fasta -d pdb70 -o Q13951.hhr -cpu 4 -n 2
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 4n9f_D Core-binding factor b   100.0 1e-100 1e-104  999.9   0.0  146    1-146     1-146 (146)
+
+No 1
+>4n9f_D Core-binding factor subunit beta {Human}
+Probab=100.00  E-value=1e-100  Score=999.99  Aligned_cols=146  Identities=100%  Similarity=1.500  Sum_probs=146.0  Template_Neff=1.000
+
+Q Q13951/CBFb     1 RVVPDQRSKFENEEFFRKLSRECEIKYTGFRDRPHEERQARFQNACRDGRSEIAFVATGTNLSLQFFPASWREYVDLERE   80 (146)
+Q Consensus       1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   80 (146)
+                    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus       1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   80 (146)
+T 4n9f_D          1 RVVPDQRSKFENEEFFRKLSRECEIKYTGFRDRPHEERQARFQNACRDGRSEIAFVATGTNLSLQFFPASWREYVDLERE   80 (146)
+T ss_dssp           CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCEEEEEEEEECCCCEEEEEEEEECCCCCCCCCCC
+T ss_pred           CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCEEEEEEEECCCCEEEEEEEEEECCCCCCCCCCC
+Confidence          99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+Q Q13951/CBFb    81 AGKVYLKAPMILNGVCVIWKGWIDLQRLDGMGCLEFDEERAQQEDALAQQAFEEARRRTREFEDRD  146 (146)
+Q Consensus      81 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  146 (146)
+                    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus      81 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  146 (146)
+T 4n9f_D         81 AGKVYLKAPMILNGVCVIWKGWIDLQRLDGMGCLEFDEERAQQEDALAQQAFEEARRRTREFEDRD  146 (146)
+T ss_dssp          EEEEEEEEEEECCCCCCCEEEEECCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+T ss_pred          EEEEEEEEEEEECCCCCEEEEEECCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+Confidence         99999999999999999999999999999999999999999999999999999999999999999
+

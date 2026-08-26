@@ -1,0 +1,139 @@
+dataset_name: cullin
+xlsx_path: data/cullin/1-s2.0-S1931312819302537-mmc2.xlsx
+sheet_nums: [0, 1, 2]
+bait_col: Bait
+prey_col: Prey
+prey_gene_col: PreyGene
+ms_score_col: SaintScore
+ctrl_col: ctrlCounts
+
+viral_remapping:
+  vifprotein: P69723
+  polpolyprotein: Q2A7R5
+  nefprotein: P18801
+  tatprotein: P0C1K3
+  gagpolyprotein: P12493
+  revprotein: P69718
+  envpolyprotein: O12164
+
+exclude_prey_genes:
+  - IGHG1_MOUSE
+
+obsolete_pdb_remapping:
+  3jaq: 6gsm
+  6t8j: 8bxx
+  4fxg: 5jpm
+  3unr: 4yta
+  6emd: 6i2d
+  2f83: 6i58
+  6ers: 6i2c
+  5lho: 5lvz
+  6emb: 6i2a
+  6fbs: 6fuw
+  5fl8: 5jcs
+  5dd2: 5zz0
+  4iqq: 5noo
+  4xam: 5jtw
+  1a2k: 5bxq
+  7ulm: 8ecg
+  7s1e: 8g4j
+  4fxk: 5jpn
+
+non_canonical_residues:
+  MSE: M
+  AYA: A
+  5F0: X
+  SEP: S
+  CSX: C
+  MEQ: Q
+  D2T: D
+  4D4: X
+  FME: M
+  ACE: X
+  HIC: H
+  CSO: C
+  2MR: R
+  DAL: A
+  ACB: D
+  1ZN: X
+  FGA: E
+  MAA: A
+  MLZ: K
+  UXY: K
+  IAS: D
+  NLE: L
+  3PA: X
+  GGL: E
+  4BA: X
+  NH2: X
+  5CT: X
+  M3L: K
+  BP4: X
+  TYS: Y
+  TPO: T
+  6V1: X
+  GLZ: X
+  CSS: C
+  AME: M
+  DDE: X
+  0TD: D
+  CSD: A
+  DAR: R
+  PEA: X
+  ASJ: X
+  BAL: X
+  KCX: K
+  MYR: X
+  YCM: C
+  SAC: S
+  PCA: E
+  MLY: K
+  MS6: M
+  THC: T
+  HY3: P
+  V5N: H
+  NMM: R
+  PTR: Y
+  CAS: C
+  4HH: XX
+  PHQ: X
+  CYG: XXX
+  AAC: X
+  0QE: G
+  PYR: A
+  ORN: R
+  SAH: C
+  S12: S
+  3K4: X
+  U6A: T
+  CME: C
+  CAF: C
+  LLP: K
+  SCY: C
+  SCH: C
+  CMT: C
+  DSN: S
+  NEP: H
+  MCS: C
+  TPQ: Y
+  SNN: X
+  OCS: C
+  OMT: M
+  MHO: M
+  RGP: E
+  FTR: W
+  4J4: C
+
+hhblits:
+  db_path: ~/databases/pdb70/pdb70
+  cpu: 2
+
+pdb_mirror_path: null
+
+filter:
+  max_evalue: 1.0e-7
+  min_aligned_cols: 88
+  min_identity_pct: 30
+  min_seq_length: 88
+  min_bsasa: 500
+  min_seq_id: 0.3

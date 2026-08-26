@@ -1,0 +1,23 @@
+dataset_name: test
+xlsx_path: dummy.xlsx
+sheet_nums: [0]
+bait_col: Bait
+prey_col: Prey
+prey_gene_col: PreyGene
+ms_score_col: SaintScore
+ctrl_col: ctrlCounts
+viral_remapping: {}
+exclude_prey_genes: []
+obsolete_pdb_remapping: {}
+non_canonical_residues: {}
+hhblits:
+  db_path: /dev/null
+  cpu: 1
+pdb_mirror_path: null
+filter:
+  max_evalue: 1.0e-7
+  min_aligned_cols: 88
+  min_identity_pct: 30
+  min_seq_length: 88
+  min_bsasa: 500
+  min_seq_id: 0.3

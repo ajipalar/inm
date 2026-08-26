@@ -1,0 +1,86 @@
+*~
+*.sw[a-z]
+*.sh.o*
+*.tsv
+hhblits_out/*.hhr
+hhblits_out/*
+._archive/hhblits_out/
+__pycache__
+data/significant_cifs/bsasa_*.csv
+data/significant_cifs/*.gz
+data/significant_cifs/*.bio.mmtf
+data/significant_cifs/*.cif
+data/significant_cifs/*.csv
+notebooks/*
+*.png
+*.pkl
+*.pdf
+*.ipynb
+*.fasta
+*.xls
+*.xlsx
+!tests/test_preprocess/fixtures/*.xlsx
+!tests/test_preprocess/fixtures/*.fasta
+!tests/test_preprocess/fixtures/*.hhr
+!data/processed/references/pdb_ppi_prediction/direct_benchmark.tsv
+!data/processed/references/pdb_ppi_prediction/cocomplex_benchmark.tsv
+*.pairsWprob
+*.interactome.txt
+*.tar.gz
+*humap2_complexes_20200809.txt
+.Rproj.user
+.DS_Store
+*.key
+._*.swh
+.RHistory
+scripts/hgscore
+results
+*.tab3.txt
+data/intact
+
+data/hiv_emap/data_s1.csv
+data/processed/preppi
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Git worktrees
+.worktrees/
+
+
+# Snakemake metadata
+.snakemake/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# Large binary / log artifacts
+*.log
+*.gif
+*.zip
+*.mmtf
+*.pdb
+*.ckpt
+
+# Large raw datasets (not part of the public repo)
+data/rf2/RF_scores*
+data/rf2/CRL5_RF_SCORES
+data/rf2/RF2-PPI_scores.zip
+data/rf2/temp.txt
+data/predictome/*.csv
+data/predictome/*.csv.gz
+data/resos/CRL5_*
+data/resos/*.csv
+data/resos/temp.txt
+utilities/hgscore/hgscore_output.csv
+
+# Derived from copyrighted Cell Host & Microbe supplementary data (mmc2.xlsx);
+# regenerate locally via utilities/hgscore/cullin2hgscore_input.py, do not commit
+data/table1.csv
+utilities/hgscore/cullin_hgscore_input.csv

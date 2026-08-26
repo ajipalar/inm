@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inm"
+version = "0.1.0"
+requires-python = ">=3.9"
+# For the full conda environment (including JAX hardware backends and graph-tool),
+# use: conda env create -f environment.yml
+dependencies = [
+    "jax>=0.4.8",
+    "numpyro>=0.12.1",
+    "numpy>=1.23.5,<2",
+    "scipy>=1.10.1",
+    "pandas>=2.0.0",
+    "pyyaml>=6.0",
+    "biotite>=0.37.0",
+    "openpyxl>=3.0.9",
+    "scikit-learn>=1.0",
+    "matplotlib>=3.5",
+    "pillow>=9.0",
+    "snakemake>=7.32,<8",
+    "pulp<2.8",  # snakemake<8 calls pulp.list_solvers, removed in pulp 2.8+ (and never existed pre-2.1)
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,125 @@
+# examples/cullin_example/config.yaml
+# Dataset configuration for cullin AP-MS minimal working example
+
+data:
+  # Path to raw cullin AP-MS data (xlsx from Cell Host & Microbe 2019)
+  xlsx_path: "data/cullin/1-s2.0-S1931312819302537-mmc2.xlsx"
+  # Known cullin complex members (ground truth interactions)
+  # Format: comma-separated or JSON list of protein names
+  ground_truth_members: ["CUL1", "CUL2", "CUL3", "CUL4A", "CUL4B", "CUL5"]
+  # Preprocessed (unfiltered) tables — used by analyze stage and as filter input
+  formatted_spec_table: "data/cullin_formatted/spec_table.tsv"
+  formatted_composite_table: "data/cullin_formatted/composite_table.tsv"
+  prey_names: "data/cullin_formatted/prey_names.tsv"
+  # Filtered model-ready tables — written by filter stage, read by model stage
+  spec_table: "data/cullin_model/spec_table.tsv"
+  composite_table: "data/cullin_model/composite_table.tsv"
+  corr: "data/cullin_model/corr.tsv"
+  shuff_corr: "data/cullin_model/shuff_corr.tsv"
+  shuff_corr_all: "data/cullin_model/shuff_corr_all.tsv"
+  direct_reference: "../../data/processed/references/pdb_ppi_prediction/direct_benchmark.tsv"
+  cocomplex_reference: "../../data/processed/references/pdb_ppi_prediction/cocomplex_benchmark.tsv"
+
+model:
+  name: model23_n_p_s_r_d
+  num_warmup: 500
+  num_samples: 1000
+  num_chains: 4
+  seed: 0
+  shuff_rseed: 0
+  shuff_all_rseed: 1
+  alpha: 0.02
+  beta: 0.1
+  disconectivity_distance: 4
+  max_distance: 10
+  n_null_bins: "auto"
+  # Priors on the latent interaction variable z and the resulting network
+  # structure (model23_n_prior_/_degree_/_nedges_ in inm.model.model23).
+  priors:
+    # z ~ Normal(z_prior_mean, z_prior_scale): weak prior on the latent
+    # interaction score per pair, centered slightly above the "no interaction"
+    # side of the Z2A hard-sigmoid threshold (0.5).
+    z_prior_mean: 0.1
+    z_prior_scale: 1.0
+    # Per-node degree ~ Normal(degree_prior_mean, degree_prior_scale): encodes
+    # the assumption that each protein directly interacts with a small number
+    # of partners in this AP-MS network (sparse, not hub-dominated).
+    degree_prior_mean: 3.0
+    degree_prior_scale: 3.0
+    # Total edge count ~ Normal(n_edges_prior_mean, n_edges_prior_scale):
+    # encodes the expected overall sparsity of the inferred network given N
+    # proteins, independent of how degree is distributed across nodes.
+    n_edges_prior_mean: 300.0
+    n_edges_prior_scale: 100.0
+
+# Filter parameters
+filter:
+  # Keep prey with max SAINT score >= cutoff across all purifications
+  saint_cutoff: 0.5
+
+# Preprocessing parameters
+preprocess:
+  # Sheet numbers in Excel file (0-indexed)
+  sheet_nums: [0, 1, 2]
+  # Column names in each sheet
+  bait_col: "Bait"
+  prey_col: "Prey"
+  ms_score_col: "SaintScore"
+  spec_col: "Spec"
+  ctrl_col: "ctrlCounts"
+  prey_gene_col: "PreyGene"
+
+# Analysis parameters
+analysis:
+  figure_dpi: 300
+  figure_format: "png"
+  top_n: 236
+  # ROC-AUC-vs-amount-of-sampling and split-half diagnostics (postprocess Figures 33-34)
+  sampling_diagnostics:
+    n_points: 10
+    n_shuffles: 5
+    n_bootstraps: 3
+  # Representative-chain sampling animation (postprocess Figure 36)
+  animation:
+    enabled: true
+    max_frames: 200
+    interval_ms: 60
+    fps: 15
+  # Degree distribution of the averaged (posterior-mean) network, thresholded
+  # at 0.5 (postprocess Figure 12). Off by default — it's easily confused with
+  # the per-sample posterior degree distributions (Figures 21-28), which show
+  # degree variability across the sampled ensemble rather than a single
+  # point estimate from the averaged network.
+  degree_distribution:
+    enabled: false
+
+# Burke et al. 2023 AlphaFold-Multimer human PPI predictions.
+# Paper: Burke et al., Nat Struct Mol Biol 30, 216-225 (2023).
+# DOI: 10.1038/s41594-022-00910-8
+# If the URL changes or fails, download the supplementary table manually and
+# place it at burke.raw_path; fetch_burke will skip re-downloading.
+burke:
+  url: "https://static-content.springer.com/esm/art%3A10.1038%2Fs41594-022-00910-8/MediaObjects/41594_2022_910_MOESM3_ESM.xlsx"
+  raw_path: "data/external/burke/burke_raw.xlsx"
+  # Column names in the supplementary table (adjust if Burke uses different headers)
+  protein_a_col: "Protein1"
+  protein_b_col: "Protein2"
+  score_col: "pDockQ"
+  sheet: 0
+  skiprows: 0
+
+# Predictomes pair-score dump (Schmidt et al., Mol Cell 2025; predictomes.org).
+# Each row is one AlphaFold-Multimer-modeled human PPI with several score columns.
+predictomes:
+  raw_path: "../../data/predictome/20251110_hs_predictome_pair_scores.csv"
+  uniprot_ids_col: "uniprot_ids"
+  uniprot_ids_sep: ":"
+  score_cols:
+    - "kirc_score"
+    - "spoc_score"
+    - "num_unique_contacts"
+    - "string_db_score"
+    - "string_db_physical_score"
+    - "biogrid_detect_count"
+    - "intact_db_evidence_count"
+    - "in_pdb"

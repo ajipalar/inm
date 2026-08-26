@@ -1,0 +1,24 @@
+# examples/cullin_example/Snakefile
+# INM Cullin Minimal Working Example
+# Demonstrates preprocessing and exploratory analysis of AP-MS data using inm library
+
+configfile: "config.yaml"
+
+MODEL_NAME = config["model"]["name"]
+
+# Include preprocessing, analysis, model, and postprocess rules
+include: "rules/preprocess.smk"
+include: "rules/analyze.smk"
+include: "rules/model.smk"
+include: "rules/postprocess.smk"
+include: "rules/burke.smk"
+include: "rules/predictomes.smk"
+
+
+rule all:
+    input:
+        rules.analyze_all.input,
+        rules.model_all.input,
+        rules.postprocess_all.input,
+    message:
+        "Pipeline complete: all outputs saved to results/"

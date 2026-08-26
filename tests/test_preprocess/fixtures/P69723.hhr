@@ -1,0 +1,42 @@
+Query         sp|P69723|VIF_HV1 Vif protein
+Match_columns 172
+No_of_seqs    1 out of 1
+Neff          1.00000
+Searched_HMMs 1
+Date          Thu Mar 26 00:00:00 2026
+Command       hhblits -i P69723.fasta -d pdb70 -o P69723.hhr -cpu 4 -n 2
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 4n9f_E Vif protein {HIV-1}    100.0 1e-100 1e-104  999.9   0.0  172    1-172     1-172 (172)
+
+No 1
+>4n9f_E Vif protein {HIV-1}
+Probab=100.00  E-value=1e-100  Score=999.99  Aligned_cols=172  Identities=100%  Similarity=1.500  Sum_probs=172.0  Template_Neff=1.000
+
+Q P69723/Vif      1 MENRWQVMIVWQVDRMRINTWKRLVKHHMYISRKAKDWFYRHHYESTNPKISSEVHIPLGDAKLVITTYWGLHTGERDWH   80 (172)
+Q Consensus       1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   80 (172)
+                    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus       1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   80 (172)
+T 4n9f_E          1 MENRWQVMIVWQVDRMRINTWKRLVKHHMYISRKAKDWFYRHHYESTNPKISSEVHIPLGDAKLVITTYWGLHTGERDWH   80 (172)
+T ss_dssp           CCCCCCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred           CCCCCCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence          99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+Q P69723/Vif     81 LGQGVSIEWRKKRYSTQVDPDLADQLIHLHYFDCFSESAIRNTILGRIVSPRCEYQAGHNKVGSLQYLALAALIKPKQIK  160 (172)
+Q Consensus      81 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  160 (172)
+                    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus      81 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  160 (172)
+T 4n9f_E         81 LGQGVSIEWRKKRYSTQVDPDLADQLIHLHYFDCFSESAIRNTILGRIVSPRCEYQAGHNKVGSLQYLALAALIKPKQIK  160 (172)
+T ss_dssp          HHHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred          HHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence         99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+Q P69723/Vif    161 PPLPSVRKLTED  172 (172)
+Q Consensus     161 ~~~~~~~~~~~~  172 (172)
+                    ||||||||||||
+T Consensus     161 ~~~~~~~~~~~~  172 (172)
+T 4n9f_E        161 PPLPSVRKLTED  172 (172)
+T ss_dssp          CCCCCCCCCCCC
+T ss_pred          CCCCCCCCCCCC
+Confidence         999999999999
+

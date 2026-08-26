@@ -1,0 +1,2185 @@
+Query         sp|P00001|PROT_A Test protein A
+Match_columns 109
+No_of_seqs    194 out of 403
+Neff          7.69791
+Searched_HMMs 206
+Date          Thu Mar 26 00:01:09 2026
+Command       hhblits -i /path/to/inm/tests/test_preprocess/fixtures/P00001.fasta -d /path/to/pdb70/pdb70 -o /path/to/inm/tests/test_preprocess/fixtures/P00001.hhr -cpu 4 -n 2
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 11AS_B LIGASE, ASPARAGINE SYNT  99.3   3E-16 2.5E-20  114.4   0.0   86    1-86      1-86  (330)
+  2 12AS_B LIGASE, ASPARAGINE SYNT  99.3   3E-16 2.5E-20  114.4   0.0   86    1-86      1-86  (330)
+  3 4LNS_A Asparagine synthetase a  99.0 7.8E-14 6.5E-18  101.8   0.0   80    7-86     11-90  (351)
+  4 6CHD_A Lysine--tRNA ligase (E.  98.3 1.4E-10 1.2E-14   89.4   0.0   74    4-84    235-311 (597)
+  5 3I7F_A Aspartyl-tRNA synthetas  98.3   2E-10 1.7E-14   88.0   0.0   69    6-83    237-308 (548)
+  6 6OD8_A Putative aspartyl-tRNA   98.2 4.5E-10 3.8E-14   85.5   0.0   70    5-83    213-285 (558)
+  7 6OD8_B Putative aspartyl-tRNA   98.2 4.5E-10 3.8E-14   85.5   0.0   70    5-83    213-285 (558)
+  8 4J15_B Aspartate--tRNA ligase,  98.2 4.6E-10 3.9E-14   85.1   0.0   69    6-83    209-280 (521)
+  9 4UP8_A LYSINE--TRNA LIGASE (E.  98.1 1.1E-09 9.1E-14   86.0   0.0   71    5-84    172-247 (777)
+ 10 2XGT_A ASPARAGINYL-TRNA SYNTHE  98.1 1.1E-09 9.3E-14   80.2   0.0   70    5-83    124-196 (435)
+ 11 2XGT_B ASPARAGINYL-TRNA SYNTHE  98.1 1.1E-09 9.3E-14   80.2   0.0   70    5-83    124-196 (435)
+ 12 5ELO_A Lysine--tRNA ligase (E.  98.1 1.3E-09 1.1E-13   82.9   0.0   71    5-84    184-259 (535)
+ 13 6BNI_B Lysine--tRNA ligase (E.  98.1 1.3E-09 1.1E-13   82.9   0.0   71    5-84    184-259 (535)
+ 14 6HCW_B Lysine--tRNA ligase (E.  98.1 1.3E-09 1.1E-13   82.9   0.0   71    5-84    184-259 (535)
+ 15 6WBD_B Lysine--tRNA ligase (E.  98.1 1.3E-09 1.1E-13   82.4   0.0   72    4-84    181-257 (511)
+ 16 1EOV_A FREE ASPARTYL-TRNA SYNT  98.1 1.6E-09 1.3E-13   81.0   0.0   69    6-83    171-242 (487)
+ 17 5XIX_A Asparagine--tRNA ligase  98.1 1.6E-09 1.4E-13   80.7   0.0   70    5-83    162-234 (472)
+ 18 5XIX_D Asparagine--tRNA ligase  98.1 1.6E-09 1.4E-13   80.7   0.0   70    5-83    162-234 (472)
+ 19 4EX5_B Lysine--tRNA ligase (E.  98.0   2E-09 1.7E-13   81.7   0.0   70    5-83    196-270 (529)
+ 20 4UP7_A LYSINE--TRNA LIGASE (E.  98.0 2.5E-09 2.1E-13   84.0   0.0   70    5-83    172-246 (777)
+ 21 1BBU_A LYSYL-TRNA SYNTHETASE;   98.0 2.7E-09 2.3E-13   80.1   0.0   72    4-84    174-250 (504)
+ 22 3KFU_C Non-discriminating and   98.0 2.7E-09 2.3E-13   77.8   0.0   69    6-83    118-189 (422)
+ 23 1ASZ_A ASPARTYL TRNA SYNTHETAS  98.0 2.9E-09 2.5E-13   79.7   0.0   69    6-83    174-245 (490)
+ 24 6O3F_B Lysine--tRNA ligase (E.  98.0 3.6E-09   3E-13   80.1   0.0   70    5-83    192-266 (529)
+ 25 6AGT_B Lysine--tRNA ligase (E.  97.9 4.3E-09 3.7E-13   78.7   0.0   71    4-83    166-241 (507)
+ 26 6HCU_A Lysine--tRNA ligase (E.  97.9 4.3E-09 3.7E-13   78.7   0.0   71    4-83    166-241 (507)
+ 27 1E1O_A LYSYL-TRNA SYNTHETASE,   97.9 4.5E-09 3.8E-13   78.8   0.0   71    5-84    175-250 (504)
+ 28 1E22_A LYSYL-TRNA SYNTHETASE (  97.9 4.5E-09 3.8E-13   78.8   0.0   71    5-84    175-250 (504)
+ 29 6IY6_A Aspartate--tRNA ligase,  97.9 4.7E-09   4E-13   78.8   0.0   69    6-83    190-261 (502)
+ 30 6AQG_C Lysine--tRNA ligase (E.  97.9 4.9E-09 4.2E-13   78.4   0.0   70    5-83    176-250 (506)
+ 31 1B8A_B ASPARTYL-TRNA SYNTHETAS  97.9 5.1E-09 4.5E-13   76.4   0.0   69    6-83    130-201 (438)
+ 32 3NEM_B Aspartyl-tRNA synthetas  97.9 5.4E-09 4.7E-13   76.2   0.0   69    6-83    130-201 (438)
+ 33 3NEN_B Aspartyl-tRNA synthetas  97.9 5.4E-09 4.7E-13   76.2   0.0   69    6-83    130-201 (438)
+ 34 3M4P_D Asparaginyl-tRNA synthe  97.9   6E-09 5.2E-13   76.9   0.0   70    5-83    148-220 (456)
+ 35 3M4Q_B Asparaginyl-tRNA synthe  97.9   6E-09 5.2E-13   76.9   0.0   70    5-83    148-220 (456)
+ 36 5HGQ_B Lysine--tRNA ligase (E.  97.9 7.2E-09 6.2E-13   77.8   0.0   72    4-84    169-245 (524)
+ 37 5HGQ_C Lysine--tRNA ligase (E.  97.9 7.2E-09 6.2E-13   77.8   0.0   72    4-84    169-245 (524)
+ 38 6KBF_A Lysine--tRNA ligase (E.  97.9 7.2E-09 6.2E-13   77.5   0.0   71    4-83    167-242 (516)
+ 39 3A74_D Lysyl-tRNA synthetase (  97.8 9.1E-09 7.8E-13   76.6   0.0   71    5-84    166-241 (493)
+ 40 3E9I_A Lysyl-tRNA synthetase (  97.8 9.1E-09 7.8E-13   76.6   0.0   71    5-84    166-241 (493)
+ 41 7F6W_A Lysine-tRNA ligase  pro  97.8 1.1E-08 9.5E-13   76.6   0.0   70    5-83    175-249 (524)
+ 42 4DPG_B Lysine--tRNA ligase (E.  97.8 1.3E-08 1.1E-12   76.0   0.0   70    5-83    168-242 (513)
+ 43 6ILD_A Lysine--tRNA ligase (E.  97.8 1.3E-08 1.1E-12   76.0   0.0   70    5-83    168-242 (513)
+ 44 6PQH_B Asparagine--tRNA ligase  97.7 2.2E-08 1.9E-12   74.2   0.0   68    7-83    138-228 (490)
+ 45 6PQH_C Asparagine--tRNA ligase  97.7 2.2E-08 1.9E-12   74.2   0.0   68    7-83    138-228 (490)
+ 46 1X54_A Asparaginyl-tRNA synthe  97.6 3.2E-08 2.8E-12   72.1   0.0   70    5-83    127-199 (434)
+ 47 4WJ3_P Glutamyl-tRNA(Gln) amid  97.6 4.3E-08 3.6E-12   75.3   0.0   69    5-83    141-215 (599)
+ 48 4WJ4_A Aspartate--tRNA(Asp/Asn  97.6 4.3E-08 3.6E-12   75.3   0.0   69    5-83    141-215 (599)
+ 49 5ZG8_A Asparagine--tRNA ligase  97.6 4.4E-08 3.9E-12   71.2   0.0   69    6-82    124-195 (438)
+ 50 1WYD_A hypothetical aspartyl-t  97.5 8.5E-08 7.5E-12   69.6   0.0   68    6-82    127-197 (429)
+ 51 1WYD_B hypothetical aspartyl-t  97.5 8.5E-08 7.5E-12   69.6   0.0   68    6-82    127-197 (429)
+ 52 4RMF_A Aspartate--tRNA(Asp/Asn  97.3 2.5E-07 2.1E-11   71.0   0.0   70    6-84    130-204 (609)
+ 53 1C0A_A ASPARTYL-TRNA SYNTHETAS  97.2 3.6E-07   3E-11   69.6   0.0   69    5-83    130-204 (585)
+ 54 6WOM_A Aspartate--tRNA ligase   97.2 3.9E-07 3.3E-11   69.3   0.0   69    6-83    142-215 (592)
+ 55 6WOM_C Aspartate--tRNA ligase   97.2 3.9E-07 3.3E-11   69.3   0.0   69    6-83    142-215 (592)
+ 56 4AH6_B ASPARTATE--TRNA LIGASE,  97.1 5.9E-07   5E-11   68.7   0.0   69    6-83    141-214 (617)
+ 57 3P8Y_B AsnS-like asparaginyl-t  97.1 8.4E-07 7.3E-11   61.5   0.0   70    4-82      6-85  (294)
+ 58 4O2D_B Aspartate--tRNA ligase   97.0 1.1E-06 9.2E-11   67.7   0.0   69    6-83    152-225 (620)
+ 59 1NNH_A asparaginyl-tRNA synthe  96.9 1.6E-06 1.4E-10   60.0   0.0   76    5-82      7-85  (294)
+ 60 6HHX_A Aspartate--tRNA(Asp) li  96.9   2E-06 1.7E-10   65.3   0.0   69    6-83    138-211 (581)
+ 61 1EFW_B ASPARTYL-TRNA SYNTHETAS  96.4 1.4E-05 1.2E-09   60.2   0.0   69    6-83    137-210 (580)
+ 62 1L0W_B Aspartyl-tRNA synthetas  96.4 1.4E-05 1.2E-09   60.2   0.0   69    6-83    137-210 (580)
+ 63 3A5Z_C Putative lysyl-tRNA syn  96.3 1.7E-05 1.5E-09   55.1   0.0   72    5-83     11-90  (328)
+ 64 3A5Y_D Putative lysyl-tRNA syn  96.3 1.9E-05 1.7E-09   55.5   0.0   72    5-83     28-107 (345)
+ 65 2ZNJ_A Putative uncharacterize  60.3    0.98 8.5E-05   29.6   0.0   31   11-41     88-121 (308)
+ 66 7R6O_C tRNA synthetases, tRNA-  56.9     1.2 0.00011   28.4   0.0   29   13-41     59-90  (273)
+ 67 3DSQ_B Pyrrolysyl-tRNA synthet  56.5     1.3 0.00011   28.7   0.0   31   11-41     68-101 (288)
+ 68 1KMM_C HISTIDYL-TRNA SYNTHETAS  54.9     1.4 0.00012   29.8   0.0   29   13-41     19-50  (424)
+ 69 5W6M_A Histidine--tRNA ligase,  53.7     1.5 0.00013   29.9   0.0   29   13-41     17-48  (450)
+ 70 5ZY9_C Threonyl-tRNA synthase   53.4     1.5 0.00013   29.1   0.0   29   13-41     30-61  (406)
+ 71 5ZY9_E Threonyl-tRNA synthase   53.4     1.5 0.00013   29.1   0.0   29   13-41     30-61  (406)
+ 72 1QE0_A HISTIDYL-TRNA SYNTHETAS  52.8     1.6 0.00014   29.4   0.0   30   13-42     16-48  (420)
+ 73 4PHC_A human histidyl-tRNA syn  52.4     1.6 0.00014   30.2   0.0   29   13-41     70-101 (509)
+ 74 1WU7_A Histidyl-tRNA synthetas  52.0     1.6 0.00015   29.5   0.0   29   13-41     20-51  (434)
+ 75 2EL9_C Histidyl-tRNA synthetas  50.9     1.8 0.00016   29.3   0.0   30   13-42     26-58  (431)
+ 76 2I4L_C Proline-tRNA ligase (E.  50.2     1.8 0.00016   29.4   0.0   29   13-41     67-98  (458)
+ 77 2I4N_B Proline-tRNA ligase (E.  50.2     1.8 0.00016   29.4   0.0   29   13-41     67-98  (458)
+ 78 3OD1_A ATP phosphoribosyltrans  49.9     1.9 0.00016   29.0   0.0   29   13-41     24-55  (400)
+ 79 3OD1_B ATP phosphoribosyltrans  49.9     1.9 0.00016   29.0   0.0   29   13-41     24-55  (400)
+ 80 4HWO_B Threonine--tRNA ligase   44.1     2.6 0.00023   27.8   0.0   30   13-42     32-64  (411)
+ 81 1EVL_D THREONYL-TRNA SYNTHETAS  43.6     2.7 0.00024   27.7   0.0   29   13-41     30-61  (401)
+ 82 1KOG_G Threonyl-tRNA synthetas  43.6     2.7 0.00024   27.7   0.0   29   13-41     30-61  (401)
+ 83 4HWT_B Threonine--tRNA ligase,  43.2     2.8 0.00025   27.8   0.0   30   13-42     32-64  (413)
+ 84 3A31_A Probable threonyl-tRNA   42.4       3 0.00026   28.9   0.0   29   13-41     49-80  (471)
+ 85 3A32_A Probable threonyl-tRNA   42.4       3 0.00026   28.9   0.0   29   13-41     49-80  (471)
+ 86 4G84_A Histidine-tRNA ligase,   41.9       3 0.00027   28.4   0.0   29   13-41     28-59  (464)
+ 87 4G84_B Histidine-tRNA ligase,   41.9       3 0.00027   28.4   0.0   29   13-41     28-59  (464)
+ 88 3RAC_A Histidine-tRNA ligase (  39.8     3.6  0.0003   27.8   0.0   30   13-42     37-69  (373)
+ 89 1NYQ_B threonyl-tRNA synthetas  39.5     3.4 0.00031   29.1   0.0   29   13-41    271-302 (645)
+ 90 1NYR_B threonyl-tRNA synthetas  39.5     3.4 0.00031   29.1   0.0   29   13-41    271-302 (645)
+ 91 4P3N_C Borrelidin; synthetase,  37.2       4 0.00035   27.1   0.0   29   13-41     42-73  (415)
+ 92 7L3O_B Threonyl-tRNA synthetas  36.3     4.2 0.00037   27.3   0.0   29   13-41     42-73  (442)
+ 93 6EZD_D Pyrrolysyl-tRNA synthet  35.9     4.5 0.00038   26.3   0.0   24   18-41     65-91  (283)
+ 94 4TTV_B human Threonyl-tRNA syn  34.3     4.7 0.00042   26.6   0.0   30   13-42     41-73  (414)
+ 95 6FTT_B ATP phosphoribosyltrans  30.1     6.4 0.00055   26.4   0.0   29   13-41     15-46  (388)
+ 96 6FTT_D ATP phosphoribosyltrans  30.1     6.4 0.00055   26.4   0.0   29   13-41     15-46  (388)
+ 97 6GIR_A Serine--tRNA ligase, cy  27.4     7.5 0.00066   26.2   0.0   30   13-42    177-209 (456)
+ 98 5UCM_B Proline--tRNA ligase (E  27.3     7.7 0.00066   27.4   0.0   30   13-42     55-87  (579)
+ 99 1QF6_A THREONYL-TRNA SYNTHETAS  25.5     8.4 0.00075   27.0   0.0   29   13-41    271-302 (642)
+100 2J3L_B PROLYL-TRNA SYNTHETASE   24.5     9.2  0.0008   26.8   0.0   29   13-41     47-78  (572)
+101 2J3M_A PROLYL-TRNA SYNTHETASE   24.5     9.2  0.0008   26.8   0.0   29   13-41     47-78  (572)
+102 3VBB_E Seryl-tRNA synthetase,   23.5      10 0.00086   26.6   0.0   28   13-40    201-231 (522)
+103 5ZNJ_A Proline--tRNA ligase (E  21.5      12   0.001   26.4   0.0   29   13-41     47-78  (567)
+104 1WLE_B Seryl-tRNA synthetase (  21.3      12   0.001   25.9   0.0   28   14-41    220-250 (501)
+105 3QNE_A Seryl-tRNA synthetase,   20.1      13  0.0011   25.3   0.0   28   13-40    185-215 (485)
+
+No 1
+>11AS_B LIGASE, ASPARAGINE SYNTHETASE, NITROGEN FIXATION; HET: ASN; 2.5A {Escherichia coli K12} SCOP: d.104.1.1
+Probab=99.29  E-value=3e-16  Score=114.41  Aligned_cols=86  Identities=93%  Similarity=1.262  Sum_probs=76.2  Template_Neff=8.800
+
+Q sp|P00001|PROT    1 MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         1 ~~l~~~~~~~ai~riRs~l~~~iR~ffgFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~l   80 (109)
+                      |||+++++.++++++|+.+.+++|+||||+||+||++....+++++++++++++..|...+++++.+||++||+.|++++
+T Consensus         1 ~~l~~~~~~~~i~~~rs~~~~~iR~~lgf~EV~tPil~~~~~~~~~~~~~~~~~~~f~~~~~~~~~~~L~~S~~~~l~~~   80 (330)
+T 11AS_B            1 MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQT   80 (330)
+T ss_dssp             ---CHHHHHHHHHHHHHHHHHHHHHSSCEEECCCCSEEETTSSCSCCTTSCCCCCCCCCTTCCSCCEEECSCCTTHHHHH
+T ss_pred             CCcchHHHHHHHHHHHHHHHHHHHHHhCCEEecCCEEecCCCCCCCCCCCccccEEEeccCCCCCeEEEecchHHHHHHH
+Confidence            79999999999999999999999999999999999999999888888888899999998875378999999999999998
+
+
+Q sp|P00001|PROT   81 IAATGF   86 (109)
+Q Consensus        81 l~~g~l   86 (109)
+                      +.++|+
+T Consensus        81 i~~~~~   86 (330)
+T 11AS_B           81 LGQHDF   86 (330)
+T ss_dssp             HHHTTC
+T ss_pred             HHhCCC
+Confidence            877434
+
+
+No 2
+>12AS_B LIGASE, ASPARAGINE SYNTHETASE, NITROGEN FIXATION; HET: ASN, AMP; 2.2A {Escherichia coli K12} SCOP: d.104.1.1
+Probab=99.29  E-value=3e-16  Score=114.41  Aligned_cols=86  Identities=93%  Similarity=1.262  Sum_probs=76.2  Template_Neff=8.800
+
+Q sp|P00001|PROT    1 MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         1 ~~l~~~~~~~ai~riRs~l~~~iR~ffgFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~l   80 (109)
+                      |||+++++.++++++|+.+.+++|+||||+||+||++....+++++++++++++..|...+++++.+||++||+.|++++
+T Consensus         1 ~~l~~~~~~~~i~~~rs~~~~~iR~~lgf~EV~tPil~~~~~~~~~~~~~~~~~~~f~~~~~~~~~~~L~~S~~~~l~~~   80 (330)
+T 12AS_B            1 MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQT   80 (330)
+T ss_dssp             ---CHHHHHHHHHHHHHHHHHHHHHHSCEEECCCCSEEETTSSCSCCTTSCCCCCEECCTTCTTCCEEECSCCTTHHHHH
+T ss_pred             CCcchHHHHHHHHHHHHHHHHHHHHHhCCEEecCCEEecCCCCCCCCCCCccccEEEeccCCCCCeEEEecchHHHHHHH
+Confidence            79999999999999999999999999999999999999999888888888899999998875378999999999999998
+
+
+Q sp|P00001|PROT   81 IAATGF   86 (109)
+Q Consensus        81 l~~g~l   86 (109)
+                      +.++|+
+T Consensus        81 i~~~~~   86 (330)
+T 12AS_B           81 LGQHDF   86 (330)
+T ss_dssp             HHHTTC
+T ss_pred             HHhCCC
+Confidence            877434
+
+
+No 3
+>4LNS_A Asparagine synthetase a (E.C.6.3.1.1); Asparagine synthetase A, LIGASE; 2.2A {Trypanosoma brucei brucei}
+Probab=98.98  E-value=7.8e-14  Score=101.80  Aligned_cols=80  Identities=68%  Similarity=0.926  Sum_probs=66.3  Template_Neff=9.100
+
+Q sp|P00001|PROT    7 AKQRQISFVKSHFSRQLEERLGLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIAATGF   86 (109)
+Q Consensus         7 ~~~~ai~riRs~l~~~iR~ffgFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~~g~l   86 (109)
+                      +++++++++|+.+.+++|+||||+||+||+|.+..++++|++++++++..|.+++++|..+||++|||+|+++++.++|+
+T Consensus        11 ~~~~~i~~~rs~~~~~~r~flgf~EV~tP~l~~~~~~~~~~~~~~~~~~~f~~~~~~~~~~~L~~S~~l~~~~~~~~~~~   90 (351)
+T 4LNS_A           11 LLQEQILTVKRSFSEALEKELNLVEVRAPILFRVGDGTQDNLSGFEKAVQVPVKAIPNASFEVVHSLAKWKRRTLANYKF   90 (351)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHTEEECCCCSEEETTSSSCC-------CCEEECTTSSSCEEEECSCCHHHHHHHHHHTTC
+T ss_pred             HHHHHHHHHHHHHHHHHHHHcCCEEEeCCEEEecCCCCCCCCCCccccEEeecccCCCCeEEEecchHHHHHHHHHhcCC
+Confidence            88899999999999999999999999999999999888999999899999988875468899999999999998887334
+
+
+No 4
+>6CHD_A Lysine--tRNA ligase (E.C.2.7.7.-,6.1.1.6); ATP binding, aminoacylation, amino acid; HET: SO4, KAA; 2.5A {Homo sapiens}
+Probab=98.34  E-value=1.4e-10  Score=89.40  Aligned_cols=74  Identities=15%  Similarity=0.243  Sum_probs=60.1  Template_Neff=9.000
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~l   80 (109)
+                      .+++..++++++|+.+.+.+|+||   ||+||+||++....++.      .+.+..+..+++ +..+||++|||+|++++
+T Consensus       235 ~~~~~~~~~~~~rs~v~~~~r~~l~~~gF~ev~tP~l~~~~~~~------~~~~f~~~~~~~-~~~~~L~~Spql~lk~l  307 (597)
+T 6CHD_A          235 ILNDFVRQKFIIRSKIITYIRSFLDELGFLEIETPMMNIIPGGA------VAKPFITYHNEL-DMNLYMRIAPELYHKML  307 (597)
+T ss_dssp             HHCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCSS------SCCCCEEEETTT-TEEEEECSCSHHHHHHH
+T ss_pred             hcCHHHHHHHHHHHHHHHHHHHHHHHCCCeEEeCCceeecCCCc------cccceEEEeCCC-CCeEEeccchHHHHHhH
+Confidence            367788999999999999999999   99999999987765541      133344455667 88999999999999998
+
+
+Q sp|P00001|PROT   81 IAAT   84 (109)
+Q Consensus        81 l~~g   84 (109)
+                      +.+|
+T Consensus       308 i~~g  311 (597)
+T 6CHD_A          308 VVGG  311 (597)
+T ss_dssp             HHTT
+T ss_pred             HhCC
+Confidence            8764
+
+
+No 5
+>3I7F_A Aspartyl-tRNA synthetase (E.C.6.1.1.12); tRNA ligase, apo, ATP-binding, Aminoacyl-tRNA; 2.8A {Entamoeba histolytica}
+Probab=98.30  E-value=2e-10  Score=87.99  Aligned_cols=69  Identities=19%  Similarity=0.195  Sum_probs=46.4  Template_Neff=8.700
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++...+++++|+.+.+.+|+||   ||+||+||++....++        +....|.+.++ ++.+||++|||+|+++++.
+T Consensus       237 ~~~~~~~~~~rs~v~~~ir~~l~~~gF~ev~tP~l~~~~~e--------~~~~~f~~~~~-~~~~~L~~Spql~l~~ll~  307 (548)
+T 3I7F_A          237 TVTNIAIFRIQSACCGLFREFLTSQKFVEIHTPKLIGCSSE--------GGSNIFEVKYF-DRKAYLAQSPQLYKQMAIM  307 (548)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSBC----------------------------CCBCSCTHHHHHHHHT
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHhCCCEEccCCEEEecCCC--------CccceeEEeeC-CcEEEecCCHHHHHHHHHh
+Confidence            5677889999999999999999   9999999999988777        66677888887 8999999999999998776
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      +
+T Consensus       308 ~  308 (548)
+T 3I7F_A          308 G  308 (548)
+T ss_dssp             T
+T ss_pred             C
+Confidence            5
+
+
+No 6
+>6OD8_A Putative aspartyl-tRNA synthetase (E.C.6.1.1.12); SSGCID, Structural Genomics, Seattle Structural; HET: EDO; 1.85A {Leishmania major}
+Probab=98.21  E-value=4.5e-10  Score=85.54  Aligned_cols=70  Identities=13%  Similarity=0.126  Sum_probs=57.5  Template_Neff=9.400
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++...+++++|+.+.+.+|+||   ||+||+||++....++        +....|...++ +..+||++||++++++++
+T Consensus       213 r~~~~~~~~~~rs~v~~~iR~~l~~~gF~Ev~tP~l~~~~~~--------~~~~~f~~~~~-~~~~~L~~s~~~~~~~~l  283 (558)
+T 6OD8_A          213 RTLASGAIFRLQSRVCQYFRQFLIDKDFCEIHSPKIINAPSE--------GGANVFKLEYF-NRFAYLAQSPQLYKQMVL  283 (558)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCC--------------CCEEEET-TEEEEECSCSHHHHHHHH
+T ss_pred             cChHHHHHHHHHHHHHHHHHHHHHhCCCEEccCCeEEecCCC--------CcccceecccC-CeEEEccCChHHHHHHHH
+Confidence            35677889999999999999999   9999999999988776        66777888887 889999999999999877
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       284 ~~  285 (558)
+T 6OD8_A          284 QG  285 (558)
+T ss_dssp             TT
+T ss_pred             Hc
+Confidence            65
+
+
+No 7
+>6OD8_B Putative aspartyl-tRNA synthetase (E.C.6.1.1.12); SSGCID, Structural Genomics, Seattle Structural; HET: EDO; 1.85A {Leishmania major}
+Probab=98.21  E-value=4.5e-10  Score=85.54  Aligned_cols=70  Identities=13%  Similarity=0.126  Sum_probs=58.3  Template_Neff=9.400
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++...+++++|+.+.+.+|+||   ||+||+||++....++        +....|...++ +..+||++||++++++++
+T Consensus       213 r~~~~~~~~~~rs~v~~~iR~~l~~~gF~Ev~tP~l~~~~~~--------~~~~~f~~~~~-~~~~~L~~s~~~~~~~~l  283 (558)
+T 6OD8_B          213 RTLASGAIFRLQSRVCQYFRQFLIDKDFCEIHSPKIINAPSE--------GGANVFKLEYF-NRFAYLAQSPQLYKQMVL  283 (558)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCC-------------CCEEEET-TEEEEECSCSHHHHHHHH
+T ss_pred             cChHHHHHHHHHHHHHHHHHHHHHhCCCEEccCCeEEecCCC--------CcccceecccC-CeEEEccCChHHHHHHHH
+Confidence            35677889999999999999999   9999999999988776        66777888887 889999999999999877
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       284 ~~  285 (558)
+T 6OD8_B          284 QG  285 (558)
+T ss_dssp             TT
+T ss_pred             Hc
+Confidence            65
+
+
+No 8
+>4J15_B Aspartate--tRNA ligase, cytoplasmic (E.C.6.1.1.12); aspartyl-tRNA synthetase, tRNA, LIGASE; HET: GOL; 2.24A {Homo sapiens}
+Probab=98.21  E-value=4.6e-10  Score=85.12  Aligned_cols=69  Identities=19%  Similarity=0.247  Sum_probs=40.6  Template_Neff=9.100
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||+|....++        +....|.+.++ +...||++||++|+++++.
+T Consensus       209 ~~~~~~i~~~rs~v~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~-~~~~~L~~sp~~~l~~~i~  279 (521)
+T 4J15_B          209 TSTSQAVFRLQSGICHLFRETLINKGFVEIQTPKIISAASE--------GGANVFTVSYF-KNNAYLAQSPQLYKQMCIC  279 (521)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCCC----------------------------------CHHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCeeEccCCC--------CccceEEEccc-CCeeEEcCCHHHHHHhHHH
+Confidence            4677899999999999999999   9999999999987776        56667888887 7889999999999998776
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      .
+T Consensus       280 ~  280 (521)
+T 4J15_B          280 A  280 (521)
+T ss_dssp             T
+T ss_pred             c
+Confidence            5
+
+
+No 9
+>4UP8_A LYSINE--TRNA LIGASE (E.C.6.1.1.6); LIGASE, AMINOACYLATION; 2.896A {ENTAMOEBA HISTOLYTICA}
+Probab=98.11  E-value=1.1e-09  Score=86.04  Aligned_cols=71  Identities=17%  Similarity=0.286  Sum_probs=58.4  Template_Neff=9.700
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|+||   ||+||+||+|....++        .....|.+.  ++ +..+||++||++|+++
+T Consensus       172 ~~~~~~~~~~~r~~~~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~~  242 (777)
+T 4UP8_A          172 VNPESVKNFVLRTKVVKAVRKYLDDKGFLEVETPILNTIPGG--------ATARPFITHHNQL-DIQMYMRIAPELYLKE  242 (777)
+T ss_dssp             HCTHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESCCCS--------CSSCCCEEEETTT-TEEEEECSCCHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeecCceecCCCC--------cccCcceeeehhc-CceEEeeeCchHHHHH
+Confidence            46888899999999999999999   9999999999877665        444445443  45 7889999999999988
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.+|
+T Consensus       243 l~~~g  247 (777)
+T 4UP8_A          243 LVVGG  247 (777)
+T ss_dssp             HHHHT
+T ss_pred             HHhCC
+Confidence            77653
+
+
+No 10
+>2XGT_A ASPARAGINYL-TRNA SYNTHETASE, CYTOPLASMIC (E.C.6.1.1.4); LIGASE, ATP-BINDING, PROTEIN BIOSYNTHESIS; HET: NSS; 1.9A {BRUGIA MALAYI}
+Probab=98.10  E-value=1.1e-09  Score=80.22  Aligned_cols=70  Identities=14%  Similarity=0.168  Sum_probs=60.5  Template_Neff=10.200
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|..+++ +...||++||+.++++++
+T Consensus       124 ~~~~~~~~~~~r~~i~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~-~~~~~L~~s~~~~l~~~~  194 (435)
+T 2XGT_A          124 RGENAAALLRLRAAATRAMREHFYNAGYVEVAPPTLVQTQVE--------GGSTLFNLDYF-GEQSFLTQSSQLYLETCI  194 (435)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCCSS--------CTTSCCEEEET-TEEEEECSCSHHHHHHHH
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHHCCCEEecCCEEEecCCC--------CCCcceeeccC-CCeeeeCCChHHHHHHHH
+Confidence            45778899999999999999999   9999999999998776        55666777777 788999999999999876
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       195 ~~  196 (435)
+T 2XGT_A          195 PT  196 (435)
+T ss_dssp             HH
+T ss_pred             HH
+Confidence            53
+
+
+No 11
+>2XGT_B ASPARAGINYL-TRNA SYNTHETASE, CYTOPLASMIC (E.C.6.1.1.4); LIGASE, ATP-BINDING, PROTEIN BIOSYNTHESIS; HET: NSS; 1.9A {BRUGIA MALAYI}
+Probab=98.10  E-value=1.1e-09  Score=80.22  Aligned_cols=70  Identities=14%  Similarity=0.168  Sum_probs=60.5  Template_Neff=10.200
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|..+++ +...||++||+.++++++
+T Consensus       124 ~~~~~~~~~~~r~~i~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~-~~~~~L~~s~~~~l~~~~  194 (435)
+T 2XGT_B          124 RGENAAALLRLRAAATRAMREHFYNAGYVEVAPPTLVQTQVE--------GGSTLFNLDYF-GEQSFLTQSSQLYLETCI  194 (435)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCCSS--------CGGGCCEEEET-TEEEEECSCSHHHHHHHH
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHHCCCEEecCCEEEecCCC--------CCCcceeeccC-CCeeeeCCChHHHHHHHH
+Confidence            45778899999999999999999   9999999999998776        55666777777 788999999999999876
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       195 ~~  196 (435)
+T 2XGT_B          195 PT  196 (435)
+T ss_dssp             HH
+T ss_pred             HH
+Confidence            53
+
+
+No 12
+>5ELO_A Lysine--tRNA ligase (E.C.6.1.1.6); SSGCID, Lysine--tRNA ligase, Cryptosporidium parvum; HET: KRS, SO4, LYS; 1.9A {Cryptosporidium parvum (strain Iowa II)}
+Probab=98.08  E-value=1.3e-09  Score=82.86  Aligned_cols=71  Identities=18%  Similarity=0.276  Sum_probs=58.3  Template_Neff=9.100
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~~   79 (109)
+                      +++..++++++|+.+.+.+|++|   ||+||+||++....++        ..+..|...  .+ +..+||++||++|+++
+T Consensus       184 ~~~~~~~~~~~rs~~~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~sp~l~lk~  254 (535)
+T 5ELO_A          184 LNEESRKVFKLRSRAIKYIRNYFDRLGFLEVETPMLNMIYGG--------AAARPFITYHNEL-ETQLYMRIAPELYLKQ  254 (535)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEecCcccccCCC--------CcccCcEEEeCcC-CceEEecCCcHHHHHH
+Confidence            46788899999999999999999   9999999999877665        444455443  34 6789999999999999
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.++
+T Consensus       255 li~~g  259 (535)
+T 5ELO_A          255 LIVGG  259 (535)
+T ss_dssp             HHHTT
+T ss_pred             HHhCC
+Confidence            88653
+
+
+No 13
+>6BNI_B Lysine--tRNA ligase (E.C.6.1.1.6); SSGCID, Lysine--tRNA ligase, Cryptosporidium parvum; HET: ADN, SO4, LYS, EDO; 1.85A {Cryptosporidium parvum (strain Iowa II)}
+Probab=98.08  E-value=1.3e-09  Score=82.86  Aligned_cols=71  Identities=18%  Similarity=0.276  Sum_probs=58.3  Template_Neff=9.100
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~~   79 (109)
+                      +++..++++++|+.+.+.+|++|   ||+||+||++....++        ..+..|...  .+ +..+||++||++|+++
+T Consensus       184 ~~~~~~~~~~~rs~~~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~sp~l~lk~  254 (535)
+T 6BNI_B          184 LNEESRKVFKLRSRAIKYIRNYFDRLGFLEVETPMLNMIYGG--------AAARPFITYHNEL-ETQLYMRIAPELYLKQ  254 (535)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEecCcccccCCC--------CcccCcEEEeCcC-CceEEecCCcHHHHHH
+Confidence            46788899999999999999999   9999999999877665        444455443  34 6789999999999999
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.++
+T Consensus       255 li~~g  259 (535)
+T 6BNI_B          255 LIVGG  259 (535)
+T ss_dssp             HHHTT
+T ss_pred             HHhCC
+Confidence            88653
+
+
+No 14
+>6HCW_B Lysine--tRNA ligase (E.C.6.1.1.6); ADENYLYLTRANSFERASE ACTIVITY, TRNA BINDING, LIGASE; HET: FYB, LYS; 1.46A {Cryptosporidium parvum (strain Iowa II)}
+Probab=98.08  E-value=1.3e-09  Score=82.86  Aligned_cols=71  Identities=18%  Similarity=0.276  Sum_probs=58.3  Template_Neff=9.100
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~~   79 (109)
+                      +++..++++++|+.+.+.+|++|   ||+||+||++....++        ..+..|...  .+ +..+||++||++|+++
+T Consensus       184 ~~~~~~~~~~~rs~~~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~sp~l~lk~  254 (535)
+T 6HCW_B          184 LNEESRKVFKLRSRAIKYIRNYFDRLGFLEVETPMLNMIYGG--------AAARPFITYHNEL-ETQLYMRIAPELYLKQ  254 (535)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEecCcccccCCC--------CcccCcEEEeCcC-CceEEecCCcHHHHHH
+Confidence            46788899999999999999999   9999999999877665        444455443  34 6789999999999999
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.++
+T Consensus       255 li~~g  259 (535)
+T 6HCW_B          255 LIVGG  259 (535)
+T ss_dssp             HHHTT
+T ss_pred             HHhCC
+Confidence            88653
+
+
+No 15
+>6WBD_B Lysine--tRNA ligase (E.C.6.1.1.6); SSGCID, Lysyl-tRNA synthetase, synthetase, tRNA-ligase; HET: LYS, EDO; 2.05A {Stenotrophomonas maltophilia (strain K279a)}
+Probab=98.08  E-value=1.3e-09  Score=82.38  Aligned_cols=72  Identities=17%  Similarity=0.282  Sum_probs=58.7  Template_Neff=9.100
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~   78 (109)
+                      .+++..++++++|+.+.+.+|++|   ||.||+||+|....++        .....|..  .++ +..+||++||++|++
+T Consensus       181 ~~~~~~~~~~~~rs~v~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~spel~lk  251 (511)
+T 6WBD_B          181 IVTPESRAVFIKRSKIIRAMRAWLDNRDFLEVETPMMHYIPGG--------AAAKPFTTHHNAL-DLDLYLRVAPELYLK  251 (511)
+T ss_dssp             HHCTHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESSCCS--------SCCCCCEEEETTT-TEEEEECSCSHHHHH
+T ss_pred             HcCHHHHHHHHHHHHHHHHHHHHHHhCCCeEeecCeeeecCCC--------cccCCceeecccC-CceeEEeeChHHHHH
+Confidence            347889999999999999999999   9999999999876655        33444444  345 788999999999998
+
+
+Q sp|P00001|PROT   79 QQIAAT   84 (109)
+Q Consensus        79 ~ll~~g   84 (109)
+                      +++.++
+T Consensus       252 ~l~~~g  257 (511)
+T 6WBD_B          252 RLTVGG  257 (511)
+T ss_dssp             HHHHHT
+T ss_pred             HHHHcC
+Confidence            877653
+
+
+No 16
+>1EOV_A FREE ASPARTYL-TRNA SYNTHETASE (E.C. 6.1.1.12); aminoacyl tRNA synthetase, tRNA ligase; 2.3A {Saccharomyces cerevisiae} SCOP: b.40.4.1, d.104.1.1
+Probab=98.06  E-value=1.6e-09  Score=81.05  Aligned_cols=69  Identities=19%  Similarity=0.156  Sum_probs=60.7  Template_Neff=9.600
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|...++ ++.+||++|+++++++++.
+T Consensus       171 ~~~~~~~~~~rs~v~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~-~~~~~L~~s~~~~l~~~~~  241 (487)
+T 1EOV_A          171 TVTNQAIFRIQAGVCELFREYLATKKFTEVHTPKLLGAPSE--------GGSSVFEVTYF-KGKAYLAQSPQFNKQQLIV  241 (487)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCSS--------SSSCCCEEEET-TEEEEECSCTHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHhCCCEEeeCCcccCCCCC--------CCCceeEeeeC-CCeEEeccCccHHHHHHHH
+Confidence            4667889999999999999999   9999999999988776        56677888887 8899999999999998776
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      .
+T Consensus       242 ~  242 (487)
+T 1EOV_A          242 A  242 (487)
+T ss_dssp             T
+T ss_pred             c
+Confidence            5
+
+
+No 17
+>5XIX_A Asparagine--tRNA ligase, cytoplasmic (E.C.6.1.1.22); Ligase; HET: GOL; 2.25A {Homo sapiens}
+Probab=98.06  E-value=1.6e-09  Score=80.71  Aligned_cols=70  Identities=17%  Similarity=0.168  Sum_probs=58.4  Template_Neff=9.600
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|..+++ |+.+||++||+.|+++++
+T Consensus       162 r~~~~~~~~~~r~~v~~~ir~~l~~~GF~ev~tP~l~~~~~~--------~~~~~f~~~~~-g~~~~L~~sp~~~l~~l~  232 (472)
+T 5XIX_A          162 RGENMSKILKARSMVTRCFRDHFFDRGYYEVTPPTLVQTQVE--------GGATLFKLDYF-GEEAFLTQSSQLYLETCL  232 (472)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCC------------CCCCEEEET-TEEEEECSCCHHHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCEeeecCCC--------CCCccEEeEeC-CceeeecCChHHHHHHHH
+Confidence            56788899999999999999999   9999999999998776        55566777777 899999999999999876
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       233 ~~  234 (472)
+T 5XIX_A          233 PA  234 (472)
+T ss_dssp             HH
+T ss_pred             HH
+Confidence            43
+
+
+No 18
+>5XIX_D Asparagine--tRNA ligase, cytoplasmic (E.C.6.1.1.22); Ligase; HET: GOL; 2.25A {Homo sapiens}
+Probab=98.06  E-value=1.6e-09  Score=80.71  Aligned_cols=70  Identities=17%  Similarity=0.168  Sum_probs=58.4  Template_Neff=9.600
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|..+++ |+.+||++||+.|+++++
+T Consensus       162 r~~~~~~~~~~r~~v~~~ir~~l~~~GF~ev~tP~l~~~~~~--------~~~~~f~~~~~-g~~~~L~~sp~~~l~~l~  232 (472)
+T 5XIX_D          162 RGENMSKILKARSMVTRCFRDHFFDRGYYEVTPPTLVQTQVE--------GGATLFKLDYF-GEEAFLTQSSQLYLETCL  232 (472)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCC------------CCCCEEEET-TEEEEECSCCHHHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCEeeecCCC--------CCCccEEeEeC-CceeeecCChHHHHHHHH
+Confidence            56788899999999999999999   9999999999998776        55566777777 899999999999999876
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       233 ~~  234 (472)
+T 5XIX_D          233 PA  234 (472)
+T ss_dssp             HH
+T ss_pred             HH
+Confidence            43
+
+
+No 19
+>4EX5_B Lysine--tRNA ligase (E.C.6.1.1.6); Structural Genomics, NIAID, National Institute; HET: LYS; 2.4A {Burkholderia thailandensis}
+Probab=98.03  E-value=2e-09  Score=81.72  Aligned_cols=70  Identities=16%  Similarity=0.240  Sum_probs=58.0  Template_Neff=9.000
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      +++..++++++|+.+++.+|++|   ||.||+||++.+..++        .....|..  .++ ++.+||++||++|+++
+T Consensus       196 ~~~~~~~~~~~rs~~~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~el~l~~  266 (529)
+T 4EX5_B          196 VTPETRTTFRARTKAIASIRKFMGDADFMEVETPMLHPIPGG--------AAAKPFVTHHNAL-DMEMFLRIAPELYLKR  266 (529)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SSSCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHhhCCcEEEeCCeeeccCCC--------cccCCceeeeCCC-CceEEeEeChHHHHHH
+Confidence            47888999999999999999999   9999999999987665        33344433  345 7789999999999998
+
+
+Q sp|P00001|PROT   80 QIAA   83 (109)
+Q Consensus        80 ll~~   83 (109)
+                      ++.+
+T Consensus       267 l~~~  270 (529)
+T 4EX5_B          267 LIVG  270 (529)
+T ss_dssp             HHHH
+T ss_pred             HHHc
+Confidence            8765
+
+
+No 20
+>4UP7_A LYSINE--TRNA LIGASE (E.C.6.1.1.6); LIGASE, AMINOACYLATION; HET: LAD; 2.789A {ENTAMOEBA HISTOLYTICA}
+Probab=98.00  E-value=2.5e-09  Score=83.95  Aligned_cols=70  Identities=17%  Similarity=0.295  Sum_probs=57.6  Template_Neff=9.600
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|+||   ||+||+||+|....++        +....|.+.  ++ +..+||++||++|+++
+T Consensus       172 ~~~~~~~~~~~r~~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~~  242 (777)
+T 4UP7_A          172 VNPESVKNFVLRTKVVKAVRKYLDDKGFLEVETPILNTIPGG--------ATARPFITHHNQL-DIQMYMRIAPELYLKE  242 (777)
+T ss_dssp             HCGGGHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESSCCS--------SSSCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCeEeecCceecCCCC--------cccCCceeeehhc-CCceeeeechhHHhHH
+Confidence            46788899999999999999999   9999999999877665        334444443  45 7889999999999987
+
+
+Q sp|P00001|PROT   80 QIAA   83 (109)
+Q Consensus        80 ll~~   83 (109)
+                      ++.+
+T Consensus       243 l~~~  246 (777)
+T 4UP7_A          243 LVVG  246 (777)
+T ss_dssp             HHHH
+T ss_pred             HHhC
+Confidence            7755
+
+
+No 21
+>1BBU_A LYSYL-TRNA SYNTHETASE; LIGASE, AMINOACYL-TRNA SYNTHETASE, PROTEIN BIOSYNTHESIS; HET: LYS; 2.7A {Escherichia coli} SCOP: b.40.4.1, d.104.1.1
+Probab=97.99  E-value=2.7e-09  Score=80.12  Aligned_cols=72  Identities=17%  Similarity=0.259  Sum_probs=58.1  Template_Neff=9.500
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~   78 (109)
+                      ..++..++++++|+.+...+|++|   ||.||+||+|....++        .....|..  .++ +..+||++||++|++
+T Consensus       174 ~~~~~~~~~~~~rs~i~~~ir~~l~~~gf~ev~tP~L~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~spel~lk  244 (504)
+T 1BBU_A          174 ISNDESRNTFKVRSQILSGIRQFMVNRGFMEVETPMMQVIPGG--------AAARPFITHHNAL-DLDMYLRIAPELYLK  244 (504)
+T ss_dssp             HHCHHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESSCCS--------SCCCCCEEEETTT-TEEEEECSCCHHHHH
+T ss_pred             hcCHHHHHHHHHHHHHHHHHHHHHHHCCCeEeecceeeecCCc--------cccCCceeeecCC-CcceEeecCHHHHHH
+Confidence            346788899999999999999999   9999999999876655        33444443  344 788999999999999
+
+
+Q sp|P00001|PROT   79 QQIAAT   84 (109)
+Q Consensus        79 ~ll~~g   84 (109)
+                      +++.++
+T Consensus       245 ~l~~~g  250 (504)
+T 1BBU_A          245 RLVVGG  250 (504)
+T ss_dssp             HHHHTT
+T ss_pred             hHHHcc
+Confidence            887653
+
+
+No 22
+>3KFU_C Non-discriminating and archaeal-type aspartyl-tRNA synthetase; AspRS, GatCAB, ATP-binding, Aminoacyl-tRNA synthetase; HET: 5MU, H2U, PSU; 3.0A {Thermus thermophilus}
+Probab=97.99  E-value=2.7e-09  Score=77.75  Aligned_cols=69  Identities=17%  Similarity=0.189  Sum_probs=36.1  Template_Neff=10.200
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|...++ |+.+||++|++.++++++.
+T Consensus       118 ~~~~~~~~~~r~~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~l~~r~~~~  188 (422)
+T 3KFU_C          118 GEKARAPLKVQAALVRGFRRYLDRQDFTEIFTPKVVRAGAE--------GGSGLFGVDYF-EKRAYLAQSPQLYKQIMVG  188 (422)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCC-------------------------------------CHHHHHHHHH
+T ss_pred             CHHhHHHHHHHHHHHHHHHHHHHhCCCEEEeCCEeeccCCC--------CCccceEeeeC-CceEEeecChHHHHHHHHH
+Confidence            5677889999999999999999   9999999999987765        55566777776 8889999999999666554
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      +
+T Consensus       189 ~  189 (422)
+T 3KFU_C          189 V  189 (422)
+T ss_dssp             H
+T ss_pred             H
+Confidence            3
+
+
+No 23
+>1ASZ_A ASPARTYL TRNA SYNTHETASE (ASPRS) (E.C.6.1.1.12); COMPLEX (AMINOACYL-TRNA SYNTHASE-TRNA), COMPLEX (AMINOACYL-TRNA; HET: 5MC, 5MU, 1MG, PSU, H2U, ATP; 3.0A {Saccharomyces cerevisiae} SCOP: b.40.4.1, d.104.1.1
+Probab=97.98  E-value=2.9e-09  Score=79.70  Aligned_cols=69  Identities=19%  Similarity=0.156  Sum_probs=60.0  Template_Neff=9.500
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|...++ +..+||++|++.+++.++.
+T Consensus       174 ~~~~~~~~~~rs~v~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~-~~~~~L~~s~~~~l~~~~~  244 (490)
+T 1ASZ_A          174 TVTNQAIFRIQAGVCELFREYLATKKFTEVHTPKLLGAPSE--------GGSSVFEVTYF-KGKAYLAQSPQFNKQQLIV  244 (490)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSCBSSCCS--------SSSCCCEEEET-TEEEECCSCSHHHHHHHHH
+T ss_pred             ChHHHHHHHHHHHHHHHHHHHHHhCCCEEeeCCceecCCCC--------CCCcceEeeeC-CCeeEEccCcchHHHHHHH
+Confidence            4667888999999999999999   9999999999988776        56667777777 8899999999999998775
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      .
+T Consensus       245 ~  245 (490)
+T 1ASZ_A          245 A  245 (490)
+T ss_dssp             T
+T ss_pred             c
+Confidence            4
+
+
+No 24
+>6O3F_B Lysine--tRNA ligase (E.C.6.1.1.6); SSGCID, KRS, nucleotide binding, Aminoacyl; HET: FYB, LYS, PG4, PEG, SO4, EDO; 2.4A {Chlamydia trachomatis serovar L2b (strain UCH-1/proctitis)}
+Probab=97.95  E-value=3.6e-09  Score=80.14  Aligned_cols=70  Identities=23%  Similarity=0.304  Sum_probs=57.2  Template_Neff=9.200
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|++|   ||.||+||+|....++        +....|..  .++ +..+||++||++|+++
+T Consensus       192 ~~~~~~~~~~~r~~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~el~l~~  262 (529)
+T 6O3F_B          192 SSEDVRKTFLTRSRILKLIREYMDQQSFLEVETPILQTVYGG--------AEATPFVTTLQAL-HAEMFLRISLEIALKK  262 (529)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SCCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEecCceeccCCC--------CccCcceeeehhh-CceeeEeechHHHHHH
+Confidence            46788999999999999999999   9999999999886654        33344433  345 7789999999999998
+
+
+Q sp|P00001|PROT   80 QIAA   83 (109)
+Q Consensus        80 ll~~   83 (109)
+                      ++.+
+T Consensus       263 l~~~  266 (529)
+T 6O3F_B          263 LLVG  266 (529)
+T ss_dssp             HHHT
+T ss_pred             HHHc
+Confidence            7765
+
+
+No 25
+>6AGT_B Lysine--tRNA ligase (E.C.6.1.1.6); KRS, CHROMONE INHIBITOR, AMINOACYLATION, ATP; HET: FMT, LYS, MLA, 9X0; 1.953A {Plasmodium falciparum}
+Probab=97.93  E-value=4.3e-09  Score=78.74  Aligned_cols=71  Identities=17%  Similarity=0.221  Sum_probs=57.2  Template_Neff=9.800
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~   78 (109)
+                      ..++..++++++|+.+.+.+|++|   ||+||+||++....++        .....|...  .+ +..+||++||+++++
+T Consensus       166 ~~~~~~~~~~~~rs~~~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~  236 (507)
+T 6AGT_B          166 LINESSRHTFVTRTKIINFLRNFLNERGFFEVETPMMNLIAGG--------ANARPFITHHNDL-DLDLYLRIATELPLK  236 (507)
+T ss_dssp             HHCHHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHH
+T ss_pred             hcCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCceeccCCC--------CccCCceeEecCC-CCeEEcccCCcHHHH
+Confidence            446778899999999999999999   9999999999876554        333344333  34 788999999999999
+
+
+Q sp|P00001|PROT   79 QQIAA   83 (109)
+Q Consensus        79 ~ll~~   83 (109)
+                      +++..
+T Consensus       237 ~l~~~  241 (507)
+T 6AGT_B          237 MLIVG  241 (507)
+T ss_dssp             HHHHT
+T ss_pred             HHHhc
+Confidence            98765
+
+
+No 26
+>6HCU_A Lysine--tRNA ligase (E.C.6.1.1.6); ADENYLYLTRANSFERASE ACTIVITY, TRNA BINDING, LIGASE; HET: FYB, TRS, HIS; 1.62A {Plasmodium falciparum 3D7}
+Probab=97.93  E-value=4.3e-09  Score=78.74  Aligned_cols=71  Identities=17%  Similarity=0.221  Sum_probs=55.4  Template_Neff=9.800
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~   78 (109)
+                      ..++..++++++|+.+.+.+|++|   ||+||+||++....++        .....|...  .+ +..+||++||+++++
+T Consensus       166 ~~~~~~~~~~~~rs~~~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~  236 (507)
+T 6HCU_A          166 LINESSRHTFVTRTKIINFLRNFLNERGFFEVETPMMNLIAGG--------ANARPFITHHNDL-DLDLYLRIATELPLK  236 (507)
+T ss_dssp             HHCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCC------------CCCCEEEETTT-TEEEEECSCSHHHHH
+T ss_pred             hcCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCceeccCCC--------CccCCceeEecCC-CCeEEcccCCcHHHH
+Confidence            446778899999999999999999   9999999999876554        333344333  34 788999999999999
+
+
+Q sp|P00001|PROT   79 QQIAA   83 (109)
+Q Consensus        79 ~ll~~   83 (109)
+                      +++..
+T Consensus       237 ~l~~~  241 (507)
+T 6HCU_A          237 MLIVG  241 (507)
+T ss_dssp             HHHHT
+T ss_pred             HHHhc
+Confidence            98765
+
+
+No 27
+>1E1O_A LYSYL-TRNA SYNTHETASE, HEAT INDUCIBLE (E.C.6.1.1.6); LIGASE, AMINOACYL-TRNA SYNTHETASE, PROTEIN BIOSYNTHESIS; HET: GOL, LYS; 2.12A {ESCHERICHIA COLI} SCOP: b.40.4.1, d.104.1.1
+Probab=97.92  E-value=4.5e-09  Score=78.79  Aligned_cols=71  Identities=20%  Similarity=0.300  Sum_probs=57.6  Template_Neff=9.600
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|...  ++ +..+||++||++++++
+T Consensus       175 ~~~~~~~~~~~rs~v~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~~  245 (504)
+T 1E1O_A          175 ANDKSRQTFVVRSKILAAIRQFMVARGFMEVETPMMQVIPGG--------ASARPFITHHNAL-DLDMYLRIAPELYLKR  245 (504)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESSCCS--------SCCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCceEecCCC--------cccCCceeeeccC-CCceEEeccHHHHHHH
+Confidence            46778899999999999999999   9999999999876655        344444433  34 6789999999999998
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.++
+T Consensus       246 l~~~g  250 (504)
+T 1E1O_A          246 LVVGG  250 (504)
+T ss_dssp             HHHHT
+T ss_pred             HHHcC
+Confidence            87653
+
+
+No 28
+>1E22_A LYSYL-TRNA SYNTHETASE (E.C.6.1.1.6); LIGASE, AMINOACYL-TRNA SYNTHETASE, PROTEIN BIOSYNTHESIS; HET: ACP, GOL, LYS; 2.43A {ESCHERICHIA COLI} SCOP: b.40.4.1, d.104.1.1
+Probab=97.92  E-value=4.5e-09  Score=78.79  Aligned_cols=71  Identities=20%  Similarity=0.300  Sum_probs=57.6  Template_Neff=9.600
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|...  ++ +..+||++||++++++
+T Consensus       175 ~~~~~~~~~~~rs~v~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~~  245 (504)
+T 1E22_A          175 ANDKSRQTFVVRSKILAAIRQFMVARGFMEVETPMMQVIPGG--------ASARPFITHHNAL-DLDMYLRIAPELYLKR  245 (504)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SCSCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCceEecCCC--------cccCCceeeeccC-CCceEEeccHHHHHHH
+Confidence            46778899999999999999999   9999999999876655        344444433  34 6789999999999998
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.++
+T Consensus       246 l~~~g  250 (504)
+T 1E22_A          246 LVVGG  250 (504)
+T ss_dssp             HHHHT
+T ss_pred             HHHcC
+Confidence            87653
+
+
+No 29
+>6IY6_A Aspartate--tRNA ligase, cytoplasmic (E.C.6.1.1.12), Aminoacyl; Aminoacyl-tRNA transferase Glutathion-S transferase domain; HET: PO4; 3.6A {Homo sapiens}
+Probab=97.92  E-value=4.7e-09  Score=78.85  Aligned_cols=69  Identities=19%  Similarity=0.247  Sum_probs=43.5  Template_Neff=9.400
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        +....|.+.++ +...||++||+.++++++.
+T Consensus       190 ~~~~~~~~~~r~~v~~~ir~~l~~~gf~ev~tP~l~~~~~e--------~~~~~f~~~~~-~~~~~L~~s~~l~l~~~~~  260 (502)
+T 6IY6_A          190 TSTSQAVFRLQSGICHLFRETLINKGFVEIQTPKIISAASE--------GGANVFTVSYF-KNNAYLAQSPQLYKQMCIC  260 (502)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCCCCCC------------------------------CCSHHHHHHHHT
+T ss_pred             ChhHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCEEEecCCC--------CccceeeeccC-CCceEEcCChHHHHHHHHH
+Confidence            4667889999999999999999   9999999999987776        55667777776 7788999999999998765
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      .
+T Consensus       261 ~  261 (502)
+T 6IY6_A          261 A  261 (502)
+T ss_dssp             T
+T ss_pred             c
+Confidence            5
+
+
+No 30
+>6AQG_C Lysine--tRNA ligase (E.C.6.1.1.6); SSGCID, Lysine--tRNA ligase, synthetase, cladosporin; HET: KRS, LYS, MPD; 2.25A {Mycobacterium ulcerans (strain Agy99)}
+Probab=97.91  E-value=4.9e-09  Score=78.40  Aligned_cols=70  Identities=20%  Similarity=0.330  Sum_probs=57.0  Template_Neff=9.800
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      +++...+++++|+.+.+.+|++|   ||.||+||+|....++        +.+..|..  .++ +...||++||++++++
+T Consensus       176 ~~~~~~~~~~~rs~v~~~ir~~l~~~gF~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~spel~l~~  246 (506)
+T 6AQG_C          176 VRPQAREVARQRIAVIRAVRNALERRGFLEVETPMLQTLAGG--------AAARPFVTHSNAL-DIDLYLRIAPELFLKR  246 (506)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCceecCCCC--------cccCCceeecccC-CCceEEeechHHHHHH
+Confidence            46788999999999999999999   9999999999876655        34444433  345 7788999999999997
+
+
+Q sp|P00001|PROT   80 QIAA   83 (109)
+Q Consensus        80 ll~~   83 (109)
+                      ++.+
+T Consensus       247 li~~  250 (506)
+T 6AQG_C          247 CIVG  250 (506)
+T ss_dssp             HHHH
+T ss_pred             HHHc
+Confidence            7665
+
+
+No 31
+>1B8A_B ASPARTYL-TRNA SYNTHETASE (EC 6.1.1.12); SYNTHETASE, TRNA LIGASE, LIGASE; HET: ATP; 1.9A {Thermococcus kodakarensis} SCOP: b.40.4.1, d.104.1.1
+Probab=97.90  E-value=5.1e-09  Score=76.44  Aligned_cols=69  Identities=14%  Similarity=0.190  Sum_probs=59.2  Template_Neff=10.300
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        .....|...++ +...+|++|++.+++.++.
+T Consensus       130 ~~~~~~~~~~r~~i~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~~~l~~l~~  200 (438)
+T 1B8A_B          130 RPEVMAIFKIRSSVFKAVRDFFHENGFIEIHTPKIIATATE--------GGTELFPMKYF-EEDAFLAESPQLYKEIMMA  200 (438)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEECCCCS--------SCCSCCEEEET-TEEEEECSCSHHHHHHGGG
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHCCCccccCCEEEecCCC--------CCCcceeceeC-CceeEecCCcHHHHHHHHH
+Confidence            5677899999999999999999   9999999999976665        45556777776 7889999999999998776
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      .
+T Consensus       201 ~  201 (438)
+T 1B8A_B          201 S  201 (438)
+T ss_dssp             T
+T ss_pred             c
+Confidence            5
+
+
+No 32
+>3NEM_B Aspartyl-tRNA synthetase (E.C.6.1.1.12); Rossmann Fold, OB Fold, LIGASE; HET: ATP, AMO; 1.89A {Thermococcus kodakarensis}
+Probab=97.89  E-value=5.4e-09  Score=76.21  Aligned_cols=69  Identities=14%  Similarity=0.199  Sum_probs=59.5  Template_Neff=10.400
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        .....|...++ ++..+|++||+.+++.++.
+T Consensus       130 ~~~~~~~~~~r~~i~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~~~l~~l~~  200 (438)
+T 3NEM_B          130 RPEVMAIFKIRSSVFKAVRDFFHENGFIEIHTPKIIATATE--------GGTELFPMKYF-EEDAFLAQSPQLYKQIMMA  200 (438)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEECCCCS--------SCCSCCEEEET-TEEEEECSCSHHHHHHGGG
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHCCCccccCCEEEecCCC--------CCccceecccC-CcceeecCCcHHHHHHHHh
+Confidence            5678889999999999999999   9999999999987765        45556777776 8889999999999998776
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      .
+T Consensus       201 ~  201 (438)
+T 3NEM_B          201 S  201 (438)
+T ss_dssp             T
+T ss_pred             c
+Confidence            5
+
+
+No 33
+>3NEN_B Aspartyl-tRNA synthetase (E.C.6.1.1.12); aminoacyl-tRNA synthetase, Rossmann fold Ob; 2.4A {Thermococcus kodakarensis}
+Probab=97.89  E-value=5.4e-09  Score=76.21  Aligned_cols=69  Identities=14%  Similarity=0.199  Sum_probs=59.5  Template_Neff=10.400
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        .....|...++ ++..+|++||+.+++.++.
+T Consensus       130 ~~~~~~~~~~r~~i~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~~~l~~l~~  200 (438)
+T 3NEN_B          130 RPEVMAIFKIRSSVFKAVRDFFHENGFIEIHTPKIIATATE--------GGTELFPMKYF-EEDAFLAQSPQLYKQIMMA  200 (438)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEECSCCS--------SCSSCCEEEET-TEEEEECSCCHHHHHHGGG
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHCCCccccCCEEEecCCC--------CCccceecccC-CcceeecCCcHHHHHHHHh
+Confidence            5678889999999999999999   9999999999987765        45556777776 8889999999999998776
+
+
+Q sp|P00001|PROT   83 A   83 (109)
+Q Consensus        83 ~   83 (109)
+                      .
+T Consensus       201 ~  201 (438)
+T 3NEN_B          201 S  201 (438)
+T ss_dssp             T
+T ss_pred             c
+Confidence            5
+
+
+No 34
+>3M4P_D Asparaginyl-tRNA synthetase, putative (E.C.6.1.1.22); aminoacyl-tRNA synthetase, tRNA ligase, AARS; HET: 4AD, SO4, GOL; 2.83A {Entamoeba histolytica}
+Probab=97.88  E-value=6e-09  Score=76.89  Aligned_cols=70  Identities=13%  Similarity=0.159  Sum_probs=55.7  Template_Neff=9.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|...++ ++.++|++|++.++++++
+T Consensus       148 r~~~~~~~~~~r~~v~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~~~~~~l~  218 (456)
+T 3M4P_D          148 RSEHTQQVLQLRSEIQWYFRKYYHDNHFTEIQPPTIVKTQCE--------GGSTLFKLQYF-NEPAYLTQSSQLYLESVI  218 (456)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEECC--------------CCCEEEET-TEEEEECSCCHHHHHTTH
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHHCCCeeccCCEEEecCCC--------CCccceeeeec-CCCeeeccCHHHHHHHHH
+Confidence            35677889999999999999999   9999999999987766        45556667776 888999999999999865
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       219 ~~  220 (456)
+T 3M4P_D          219 AS  220 (456)
+T ss_dssp             HH
+T ss_pred             HH
+Confidence            43
+
+
+No 35
+>3M4Q_B Asparaginyl-tRNA synthetase, putative (E.C.6.1.1.22); aminoacyl-tRNA synthetase, tRNA ligase, AARS; 3.0A {Entamoeba histolytica}
+Probab=97.88  E-value=6e-09  Score=76.89  Aligned_cols=70  Identities=13%  Similarity=0.159  Sum_probs=57.7  Template_Neff=9.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..++++++|+.+.+.+|++|   ||.||+||++....++        +....|...++ ++.++|++|++.++++++
+T Consensus       148 r~~~~~~~~~~r~~v~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~~~~~~l~  218 (456)
+T 3M4Q_B          148 RSEHTQQVLQLRSEIQWYFRKYYHDNHFTEIQPPTIVKTQCE--------GGSTLFKLQYF-NEPAYLTQSSQLYLESVI  218 (456)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCCC-----------CCCCEEEET-TEEEEECSCCHHHHHTTT
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHHCCCeeccCCEEEecCCC--------CCccceeeeec-CCCeeeccCHHHHHHHHH
+Confidence            35677889999999999999999   9999999999987766        45556667776 888999999999999865
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       219 ~~  220 (456)
+T 3M4Q_B          219 AS  220 (456)
+T ss_dssp             TT
+T ss_pred             HH
+Confidence            43
+
+
+No 36
+>5HGQ_B Lysine--tRNA ligase (E.C.6.1.1.6); Cladosporin, Lysine-tRNA synthetase, Loa loa; HET: KRS, LYS; 3.283A {Loa loa}
+Probab=97.86  E-value=7.2e-09  Score=77.76  Aligned_cols=72  Identities=15%  Similarity=0.244  Sum_probs=57.6  Template_Neff=9.800
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~   78 (109)
+                      .+++..++++++|+.+.+++|++|   ||.||+||++....++        .....|..  .++ +..+||++||++|++
+T Consensus       169 ~~~~~~~~~~~~r~~~~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~~~-~~~~~L~~s~~l~l~  239 (524)
+T 5HGQ_B          169 IMNPDVKNRFVTRSRMISFLRRYLDNLGFLEVETPMMNLIAGG--------ATAKPFITHHNDL-DMDLYLRVAPELYLK  239 (524)
+T ss_dssp             HHCTTHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SCCCCCEEEETTT-TEEEEECSCSHHHHH
+T ss_pred             hcCHHHHHHHHHHHHHHHHHHHHHHHCCcEEEecCceeecCCc--------cccCCceeeeccC-CCceEEeeCHHHHHH
+Confidence            356788899999999999999999   9999999999876554        33333333  334 778999999999999
+
+
+Q sp|P00001|PROT   79 QQIAAT   84 (109)
+Q Consensus        79 ~ll~~g   84 (109)
+                      +++.++
+T Consensus       240 ~l~~~g  245 (524)
+T 5HGQ_B          240 MLVVGG  245 (524)
+T ss_dssp             HHHHTT
+T ss_pred             HHHHcC
+Confidence            988653
+
+
+No 37
+>5HGQ_C Lysine--tRNA ligase (E.C.6.1.1.6); Cladosporin, Lysine-tRNA synthetase, Loa loa; HET: KRS, LYS; 3.283A {Loa loa}
+Probab=97.86  E-value=7.2e-09  Score=77.76  Aligned_cols=72  Identities=15%  Similarity=0.244  Sum_probs=57.6  Template_Neff=9.800
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~   78 (109)
+                      .+++..++++++|+.+.+++|++|   ||.||+||++....++        .....|..  .++ +..+||++||++|++
+T Consensus       169 ~~~~~~~~~~~~r~~~~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~~~-~~~~~L~~s~~l~l~  239 (524)
+T 5HGQ_C          169 IMNPDVKNRFVTRSRMISFLRRYLDNLGFLEVETPMMNLIAGG--------ATAKPFITHHNDL-DMDLYLRVAPELYLK  239 (524)
+T ss_dssp             HHCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------CSSCCCEEEETTT-TEEEEECSCSHHHHH
+T ss_pred             hcCHHHHHHHHHHHHHHHHHHHHHHHCCcEEEecCceeecCCc--------cccCCceeeeccC-CCceEEeeCHHHHHH
+Confidence            356788899999999999999999   9999999999876554        33333333  334 778999999999999
+
+
+Q sp|P00001|PROT   79 QQIAAT   84 (109)
+Q Consensus        79 ~ll~~g   84 (109)
+                      +++.++
+T Consensus       240 ~l~~~g  245 (524)
+T 5HGQ_C          240 MLVVGG  245 (524)
+T ss_dssp             HHHHTT
+T ss_pred             HHHHcC
+Confidence            988653
+
+
+No 38
+>6KBF_A Lysine--tRNA ligase (E.C.6.1.1.6); Inhibitor, Complex, LIGASE; HET: GOL, D4X, LYS; 1.92A {Plasmodium falciparum (isolate NF54)}
+Probab=97.85  E-value=7.2e-09  Score=77.52  Aligned_cols=71  Identities=17%  Similarity=0.221  Sum_probs=56.9  Template_Neff=9.900
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK--ALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~--~~~~~~~~L~~S~ql~l~   78 (109)
+                      ..++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|...  .+ +..+||++||+++++
+T Consensus       167 ~~~~~~~~~~~~r~~~~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~  237 (516)
+T 6KBF_A          167 LINESSRHTFVTRTKIINFLRNFLNERGFFEVETPMMNLIAGG--------ANARPFITHHNDL-DLDLYLRIATELPLK  237 (516)
+T ss_dssp             HHCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHH
+T ss_pred             hcCHHHHHHHHHHHHHHHHHHHHHHHCCCeEeeCCcccccCCC--------cccCCceeecccC-CceEEeeeccchhHH
+Confidence            346778889999999999999999   9999999999876554        333344333  34 678899999999999
+
+
+Q sp|P00001|PROT   79 QQIAA   83 (109)
+Q Consensus        79 ~ll~~   83 (109)
+                      +++.+
+T Consensus       238 ~l~~~  242 (516)
+T 6KBF_A          238 MLIVG  242 (516)
+T ss_dssp             HHHHT
+T ss_pred             HHHhc
+Confidence            88755
+
+
+No 39
+>3A74_D Lysyl-tRNA synthetase (E.C.6.1.1.6); aminoacyl tRNA synthetase, LIGASE, PROTEIN; HET: B4P, MG, LYN; 1.8A {Geobacillus stearothermophilus}
+Probab=97.82  E-value=9.1e-09  Score=76.57  Aligned_cols=71  Identities=18%  Similarity=0.294  Sum_probs=57.8  Template_Neff=9.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|..  .++ +..+||++|+++++++
+T Consensus       166 ~~~~~~~~~~~r~~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~~  236 (493)
+T 3A74_D          166 MNPESKKTFITRSLIIQSMRRYLDSHGYLEVETPMMHAVAGG--------AAARPFITHHNAL-DMTLYMRIAIELHLKR  236 (493)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEecCceecCCCC--------cccCCcEeeeccc-CCceeEeeccHHHHHH
+Confidence            46788899999999999999999   9999999999987655        33334433  345 7889999999999988
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.++
+T Consensus       237 l~~~g  241 (493)
+T 3A74_D          237 LIVGG  241 (493)
+T ss_dssp             HHHTT
+T ss_pred             HHHcC
+Confidence            87653
+
+
+No 40
+>3E9I_A Lysyl-tRNA synthetase (E.C.6.1.1.6); aminoacyl tRNA synthetase, LIGASE, PROTEIN; HET: XAH, 1PE; 2.2A {Bacillus stearothermophilus}
+Probab=97.82  E-value=9.1e-09  Score=76.57  Aligned_cols=71  Identities=18%  Similarity=0.294  Sum_probs=57.8  Template_Neff=9.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|..  .++ +..+||++|+++++++
+T Consensus       166 ~~~~~~~~~~~r~~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~l~l~~  236 (493)
+T 3E9I_A          166 MNPESKKTFITRSLIIQSMRRYLDSHGYLEVETPMMHAVAGG--------AAARPFITHHNAL-DMTLYMRIAIELHLKR  236 (493)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SSCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEecCceecCCCC--------cccCCcEeeeccc-CCceeEeeccHHHHHH
+Confidence            46788899999999999999999   9999999999987655        33334433  345 7889999999999988
+
+
+Q sp|P00001|PROT   80 QIAAT   84 (109)
+Q Consensus        80 ll~~g   84 (109)
+                      ++.++
+T Consensus       237 l~~~g  241 (493)
+T 3E9I_A          237 LIVGG  241 (493)
+T ss_dssp             HHHTT
+T ss_pred             HHHcC
+Confidence            87653
+
+
+No 41
+>7F6W_A Lysine-tRNA ligase  protein translation; HET: PG6, KAA; 2.607A {Saccharomyces cerevisiae}
+Probab=97.80  E-value=1.1e-08  Score=76.62  Aligned_cols=70  Identities=19%  Similarity=0.270  Sum_probs=56.4  Template_Neff=9.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV--KALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~--~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..+.++++|+.+.+.+|++|   ||.||+||++....++        .....|..  .++ +..+||++||++++++
+T Consensus       175 ~~~~~~~~~~~r~~v~~~ir~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~-~~~~~L~~s~~~~l~~  245 (524)
+T 7F6W_A          175 MNKDARNRFITRSEIIRYIRRFLDQRKFIEVETPMMNVIAGG--------ATAKPFITHHNDL-DMDMYMRIAPELFLKQ  245 (524)
+T ss_dssp             HCSHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESSCCS--------SSSCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCeeEecCCc--------cccCCceeeeccc-CCceEEeecHHHHHHH
+Confidence            46677889999999999999999   9999999999876654        33333433  344 7789999999999999
+
+
+Q sp|P00001|PROT   80 QIAA   83 (109)
+Q Consensus        80 ll~~   83 (109)
+                      ++.+
+T Consensus       246 l~~~  249 (524)
+T 7F6W_A          246 LVVG  249 (524)
+T ss_dssp             HHHH
+T ss_pred             HHhc
+Confidence            8864
+
+
+No 42
+>4DPG_B Lysine--tRNA ligase (E.C.6.1.1.6), Aminoacyl tRNA; lysyl-tRNA synthetase, LysRS, P38, AIMP2; HET: MG, LYS, APC; 2.844A {Homo sapiens}
+Probab=97.77  E-value=1.3e-08  Score=75.95  Aligned_cols=70  Identities=16%  Similarity=0.249  Sum_probs=56.1  Template_Neff=10.000
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVK--VKALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~--~~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|.  ..++ +..+||++||++|+++
+T Consensus       168 ~~~~~~~~~~~rs~~~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~~~-~~~~~L~~s~~l~l~~  238 (513)
+T 4DPG_B          168 LNDFVRQKFIIRSKIITYIRSFLDELGFLEIETPMMNIIPGG--------AVAKPFITYHNEL-DMNLYMRIAPELYHKM  238 (513)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SCCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCceeccCCC--------cccCcceeecCCC-CCcccccchHHHHHHH
+Confidence            46777889999999999999999   9999999999876554        2233332  2345 7889999999999998
+
+
+Q sp|P00001|PROT   80 QIAA   83 (109)
+Q Consensus        80 ll~~   83 (109)
+                      ++.+
+T Consensus       239 l~~~  242 (513)
+T 4DPG_B          239 LVVG  242 (513)
+T ss_dssp             HHHT
+T ss_pred             HHhC
+Confidence            8765
+
+
+No 43
+>6ILD_A Lysine--tRNA ligase (E.C.2.7.7.-,6.1.1.6), Aminoacyl tRNA; lysyl-tRNA synthetase, LysRS, P38, AIMP2; HET: GOL, 45A, LYS; 1.882A {Homo sapiens}
+Probab=97.77  E-value=1.3e-08  Score=75.95  Aligned_cols=70  Identities=16%  Similarity=0.249  Sum_probs=56.1  Template_Neff=10.000
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVK--VKALPDAQFEVVHSLAKWKRQ   79 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~--~~~~~~~~~~L~~S~ql~l~~   79 (109)
+                      .++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|.  ..++ +..+||++||++|+++
+T Consensus       168 ~~~~~~~~~~~rs~~~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~~~-~~~~~L~~s~~l~l~~  238 (513)
+T 6ILD_A          168 LNDFVRQKFIIRSKIITYIRSFLDELGFLEIETPMMNIIPGG--------AVAKPFITYHNEL-DMNLYMRIAPELYHKM  238 (513)
+T ss_dssp             HCHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCCS--------SCCCCCEEEETTT-TEEEEECSCSHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCceeccCCC--------cccCcceeecCCC-CCcccccchHHHHHHH
+Confidence            46777889999999999999999   9999999999876554        2233332  2345 7889999999999998
+
+
+Q sp|P00001|PROT   80 QIAA   83 (109)
+Q Consensus        80 ll~~   83 (109)
+                      ++.+
+T Consensus       239 l~~~  242 (513)
+T 6ILD_A          239 LVVG  242 (513)
+T ss_dssp             HHHT
+T ss_pred             HHhC
+Confidence            8765
+
+
+No 44
+>6PQH_B Asparagine--tRNA ligase (E.C.6.1.1.22); SSGCID, Structural Genomics, Elizabethkingia sp.; 2.0A {Elizabethkingia sp.}
+Probab=97.69  E-value=2.2e-08  Score=74.16  Aligned_cols=68  Identities=6%  Similarity=-0.019  Sum_probs=49.8  Template_Neff=10.100
+
+Q sp|P00001|PROT    7 AKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVK--------------------VKALP   63 (109)
+Q Consensus         7 ~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~--------------------~~~~~   63 (109)
+                      +...+++++|+.+.+.+|++|   ||+||+||++....++        +....|.                    ..++ 
+T Consensus       138 ~~~~~~~~~r~~i~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~~~~~~~~~~~~~~~~~~~-  208 (490)
+T 6PQH_B          138 NLFGAVFRVRHAVSFAIHSFFNDRQFFYLNTPVITGADAE--------GAGEMFGVTNFDLDNIPRNEDGAIDYTQDFF-  208 (490)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEECC-------------CCCCEEECSCTTSCCBCTTSSBCGGGSTT-
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHhCCcEEeeCCEEEcCCCC--------CccccEEecccccccCCCCCCCCcccccccc-
+Confidence            456788999999999999999   9999999999887655        2222222                    2244 
+
+
+Q sp|P00001|PROT   64 DAQFEVVHSLAKWKRQQIAA   83 (109)
+Q Consensus        64 ~~~~~L~~S~ql~l~~ll~~   83 (109)
+                      +...+|++|+++++++++.+
+T Consensus       209 ~~~~~L~~s~~~~~~~~~~g  228 (490)
+T 6PQH_B          209 GRKTNLTVSGQLEGETAAMG  228 (490)
+T ss_dssp             SSCEEECSCSHHHHHHHHHH
+T ss_pred             CCeeeEecccHHHHHHHHhc
+Confidence            67789999999997765543
+
+
+No 45
+>6PQH_C Asparagine--tRNA ligase (E.C.6.1.1.22); SSGCID, Structural Genomics, Elizabethkingia sp.; 2.0A {Elizabethkingia sp.}
+Probab=97.69  E-value=2.2e-08  Score=74.16  Aligned_cols=68  Identities=6%  Similarity=-0.019  Sum_probs=49.8  Template_Neff=10.100
+
+Q sp|P00001|PROT    7 AKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVK--------------------VKALP   63 (109)
+Q Consensus         7 ~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~--------------------~~~~~   63 (109)
+                      +...+++++|+.+.+.+|++|   ||+||+||++....++        +....|.                    ..++ 
+T Consensus       138 ~~~~~~~~~r~~i~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~f~~~~~~~~~~~~~~~~~~~~~~~~~-  208 (490)
+T 6PQH_C          138 NLFGAVFRVRHAVSFAIHSFFNDRQFFYLNTPVITGADAE--------GAGEMFGVTNFDLDNIPRNEDGAIDYTQDFF-  208 (490)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEECC-------------CCCCEEECSCTTSCCBCTTSSBCGGGSTT-
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHhCCcEEeeCCEEEcCCCC--------CccccEEecccccccCCCCCCCCcccccccc-
+Confidence            456788999999999999999   9999999999887655        2222222                    2244 
+
+
+Q sp|P00001|PROT   64 DAQFEVVHSLAKWKRQQIAA   83 (109)
+Q Consensus        64 ~~~~~L~~S~ql~l~~ll~~   83 (109)
+                      +...+|++|+++++++++.+
+T Consensus       209 ~~~~~L~~s~~~~~~~~~~g  228 (490)
+T 6PQH_C          209 GRKTNLTVSGQLEGETAAMG  228 (490)
+T ss_dssp             SSCEEECSCSHHHHHHHHHH
+T ss_pred             CCeeeEecccHHHHHHHHhc
+Confidence            67789999999997765543
+
+
+No 46
+>1X54_A Asparaginyl-tRNA synthetase (E.C.6.1.1.22); aminoacyl-trna synthetase, RIKEN Structural Genomics/Proteomics; HET: 4AD; 1.45A {Pyrococcus horikoshii}
+Probab=97.64  E-value=3.2e-08  Score=72.10  Aligned_cols=70  Identities=26%  Similarity=0.172  Sum_probs=59.0  Template_Neff=10.200
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..++++++|+.+.+.+|++|   ||.||+||++....++        .....|...++ |+..+|++|++.++++++
+T Consensus       127 ~~~~~~~~~~~r~~i~~~ir~~~~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-g~~~~Lr~s~~~~~~~~~  197 (434)
+T 1X54_A          127 RTPKASAIMKVKETLIMAAREWLLKDGWHEVFPPILVTGAVE--------GGATLFKLKYF-DKYAYLSQSAQLYLEAAI  197 (434)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCCSS--------CGGGCCEEEET-TEEEEECSCSHHHHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEecCCEeecCCCC--------CCccceeeeeC-CeEEEecCChHHHHHHHH
+Confidence            34677889999999999999999   9999999999987765        45556666676 888999999999998877
+
+
+Q sp|P00001|PROT   82 AA   83 (109)
+Q Consensus        82 ~~   83 (109)
+                      .+
+T Consensus       198 ~~  199 (434)
+T 1X54_A          198 FG  199 (434)
+T ss_dssp             HH
+T ss_pred             hc
+Confidence            43
+
+
+No 47
+>4WJ3_P Glutamyl-tRNA(Gln) amidotransferase subunit A,Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase; transamidosome, aminoacyl-tRNA synthetase, GatCAB, tRNA; 3.705A {Pseudomonas aeruginosa PAO1}
+Probab=97.60  E-value=4.3e-08  Score=75.28  Aligned_cols=69  Identities=19%  Similarity=0.231  Sum_probs=54.9  Template_Neff=8.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV---KALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~---~~~~~~~~~L~~S~ql~l~   78 (109)
+                      +++..++++++|+.+.+++|++|   ||.||+||++....++        + +..|..   .+. ++.++|++|++.+++
+T Consensus       141 r~~~~~~~~~~rs~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------g-~~~~~~~~~~~~-~~~~~L~~s~~~~l~  210 (599)
+T 4WJ3_P          141 RRPEMAAKLKLRARITSSIRRYLDDNGFLDVETPILGRPTPE--------G-ARDYLVPSRTYP-GHFFALPQSPQLFKQ  210 (599)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCSS--------S-CCCCEEECSSST-TCEEECCSCSHHHHH
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCCccCCCCC--------C-CccceEEeecCC-CceEEcCCCHHHHHH
+Confidence            35778899999999999999999   9999999999886655        2 112221   233 778899999999999
+
+
+Q sp|P00001|PROT   79 QQIAA   83 (109)
+Q Consensus        79 ~ll~~   83 (109)
+                      +++..
+T Consensus       211 ~~~~~  215 (599)
+T 4WJ3_P          211 LLMVA  215 (599)
+T ss_dssp             HHHHT
+T ss_pred             HHHHc
+Confidence            97754
+
+
+No 48
+>4WJ4_A Aspartate--tRNA(Asp/Asn) ligase/RNA Complex; non-discriminating AspRS, tRNA, aminoacylation, LIGASE-RNA; 3.294A {Pseudomonas aeruginosa PAO1}
+Probab=97.60  E-value=4.3e-08  Score=75.28  Aligned_cols=69  Identities=19%  Similarity=0.231  Sum_probs=54.9  Template_Neff=8.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKV---KALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~---~~~~~~~~~L~~S~ql~l~   78 (109)
+                      +++..++++++|+.+.+++|++|   ||.||+||++....++        + +..|..   .+. ++.++|++|++.+++
+T Consensus       141 r~~~~~~~~~~rs~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------g-~~~~~~~~~~~~-~~~~~L~~s~~~~l~  210 (599)
+T 4WJ4_A          141 RRPEMAAKLKLRARITSSIRRYLDDNGFLDVETPILGRPTPE--------G-ARDYLVPSRTYP-GHFFALPQSPQLFKQ  210 (599)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCSS--------S-SCCCEEECSSST-TCEEECCSCSHHHHH
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCCccCCCCC--------C-CccceEEeecCC-CceEEcCCCHHHHHH
+Confidence            35778899999999999999999   9999999999886655        2 112221   233 778899999999999
+
+
+Q sp|P00001|PROT   79 QQIAA   83 (109)
+Q Consensus        79 ~ll~~   83 (109)
+                      +++..
+T Consensus       211 ~~~~~  215 (599)
+T 4WJ4_A          211 LLMVA  215 (599)
+T ss_dssp             HHHHT
+T ss_pred             HHHHc
+Confidence            97754
+
+
+No 49
+>5ZG8_A Asparagine--tRNA ligase (E.C.6.1.1.22); GlnRS, QRS, Ligase, Synthetase; 2.4A {Thermus thermophilus}
+Probab=97.58  E-value=4.4e-08  Score=71.18  Aligned_cols=69  Identities=13%  Similarity=0.187  Sum_probs=52.5  Template_Neff=10.400
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++.....+        .....|...++++..++|++|++.++++++.
+T Consensus       124 ~~~~~~~~~~~~~~~~~~r~~l~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~~~~~~~L~~s~~~~l~~l~~  195 (438)
+T 5ZG8_A          124 HRRPFAVMRIRDELERAIHEFFGERGFLRFDAPILTPSAVE--------GTTELFEVELFDGEKAYLSQSGQLYAEAGAL  195 (438)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEEC----------------CCEEECSTTCEEEECSCCHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHCCCEEEeCCeeecCCCC--------CcccceeecccCCeEEECCCChHHHHHHHHH
+Confidence            3567888999999999999999   9999999999987765        4455566666634789999999999998763
+
+
+No 50
+>1WYD_A hypothetical aspartyl-tRNA synthetase; aspartyl-tRNA synthetase, archaea, sulfolobus tokodaii; HET: SO4, EPE; 2.3A {Sulfolobus tokodaii}
+Probab=97.48  E-value=8.5e-08  Score=69.56  Aligned_cols=68  Identities=16%  Similarity=0.151  Sum_probs=55.8  Template_Neff=10.300
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||.+.....+        .....|...++ ++..+|++||+.+++++..
+T Consensus       127 ~~~~~~~~~~~~~~~~~ir~~~~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~~~~~~~~~  197 (429)
+T 1WYD_A          127 RQEMQAVIKIQSLALKAFRETLYKEGFIEIFTPKIIASATE--------GGAQLFPVIYF-GKEAFLAQSPQLYKELMAG  197 (429)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCSS--------TTCCCCEEEET-TEEEEECSCCHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCeEeccCCC--------CCCceeEEEeC-CceEEEcCCcHHHHHHHHH
+Confidence            5677889999999999999999   9999999999887655        34445666666 7889999999999775543
+
+
+No 51
+>1WYD_B hypothetical aspartyl-tRNA synthetase; aspartyl-tRNA synthetase, archaea, sulfolobus tokodaii; HET: SO4, EPE; 2.3A {Sulfolobus tokodaii}
+Probab=97.48  E-value=8.5e-08  Score=69.56  Aligned_cols=68  Identities=16%  Similarity=0.151  Sum_probs=55.8  Template_Neff=10.300
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQIA   82 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll~   82 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||.+.....+        .....|...++ ++..+|++||+.+++++..
+T Consensus       127 ~~~~~~~~~~~~~~~~~ir~~~~~~gf~ev~tP~l~~~~~~--------~~~~~~~~~~~-~~~~~L~~s~~~~~~~~~~  197 (429)
+T 1WYD_B          127 RQEMQAVIKIQSLALKAFRETLYKEGFIEIFTPKIIASATE--------GGAQLFPVIYF-GKEAFLAQSPQLYKELMAG  197 (429)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESSCSS--------TTCCCCEEEET-TEEEEECSCSHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCeEeccCCC--------CCCceeEEEeC-CceEEEcCCcHHHHHHHHH
+Confidence            5677889999999999999999   9999999999887655        34445666666 7889999999999775543
+
+
+No 52
+>4RMF_A Aspartate--tRNA(Asp/Asn) ligase; alpha and beta proteins, tRNA; 2.4A {Mycobacterium smegmatis}
+Probab=97.30  E-value=2.5e-07  Score=70.95  Aligned_cols=70  Identities=19%  Similarity=0.229  Sum_probs=54.9  Template_Neff=9.000
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKA--LPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~--~~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||+|....++        + ...|...+  +.++.++|++|++.+++++
+T Consensus       130 ~~~~~~~l~~r~~v~~~ir~~l~~~gF~ev~tP~l~~~~~~--------g-~~~~~~~~~~~~g~~~~L~~s~~~~l~~l  200 (609)
+T 4RMF_A          130 REGPGNALRLRSKVNAAARSVLAEHDFVEIETPTLTRSTPE--------G-ARDFLVPARLQPGSFYALPQSPQLFKQLL  200 (609)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCCC--------S-SCCCEEECTTSTTCEEECCSCSHHHHHHH
+T ss_pred             CccchHHHHHHHHHHHHHHHHHHhCCCEEeeCCCccCCCcc--------c-cccceeecccCCCCeeecCCchHHHHHHH
+Confidence            4667889999999999999999   9999999999987654        1 22333322  1267889999999999988
+
+
+Q sp|P00001|PROT   81 IAAT   84 (109)
+Q Consensus        81 l~~g   84 (109)
+                      +..+
+T Consensus       201 ~~~g  204 (609)
+T 4RMF_A          201 MVAG  204 (609)
+T ss_dssp             HHTT
+T ss_pred             HHcC
+Confidence            7653
+
+
+No 53
+>1C0A_A ASPARTYL-TRNA SYNTHETASE (E.C.6.1.1.12)/TRNA COMPLEX, ADENOSINE; PROTEIN-RNA COMPLEX, LIGASE-RNA COMPLEX; HET: 5MU, G7M, AMP, AMO, PSU, H2U, QUO, 4SU; 2.4A {Escherichia coli} SCOP: b.40.4.1, d.104.1.1, d.74.4.1
+Probab=97.23  E-value=3.6e-07  Score=69.62  Aligned_cols=69  Identities=12%  Similarity=0.192  Sum_probs=53.9  Template_Neff=9.200
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVK---ALPDAQFEVVHSLAKWKR   78 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~---~~~~~~~~L~~S~ql~l~   78 (109)
+                      +++...+++++|+.+.+.+|++|   ||.||+||++....++        + ...+...   +. ++.++|++|++.+++
+T Consensus       130 r~~~~~~~~~~rs~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------g-~~~~~~~~~~~~-~~~~~L~~s~~~~l~  199 (585)
+T 1C0A_A          130 RRPEMAQRLKTRAKITSLVRRFMDDHGFLDIETPMLTKATPE--------G-ARDYLVPSRVHK-GKFYALPQSPQLFKQ  199 (585)
+T ss_dssp             TSHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCSS--------S-SCCCEEECSSST-TCEEECCSCSHHHHH
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHCCCEEeecCCccCCCCC--------c-ccccceeeeecC-CcEEEcCCChHHHHH
+Confidence            35677889999999999999999   9999999999876554        2 1112111   23 678899999999999
+
+
+Q sp|P00001|PROT   79 QQIAA   83 (109)
+Q Consensus        79 ~ll~~   83 (109)
+                      +++..
+T Consensus       200 ~l~~~  204 (585)
+T 1C0A_A          200 LLMMS  204 (585)
+T ss_dssp             HHHHT
+T ss_pred             HHHhc
+Confidence            87754
+
+
+No 54
+>6WOM_A Aspartate--tRNA ligase (E.C.6.1.1.12); SSGCID, Structural Genomics, Elizabethkingia sp.; HET: SO4; 2.15A {Elizabethkingia anophelis}
+Probab=97.22  E-value=3.9e-07  Score=69.30  Aligned_cols=69  Identities=17%  Similarity=0.305  Sum_probs=53.9  Template_Neff=9.400
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKA--LPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~--~~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||++....++        + ...|...+  ..+..++|++|++.+++++
+T Consensus       142 ~~~~~~~~~~r~~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------g-~~~~~~~~~~~~~~~~~L~~s~~~~l~~~  212 (592)
+T 6WOM_A          142 RNPVKEKLIFRHKIAQKVRNYLSDQGFIEVETPVLIKSTPE--------G-ARDFVVPSRMNPGQFYALPQSPQTFKQLL  212 (592)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCSS--------S-SCCCEEECSSSTTCEEECCSCSHHHHHHH
+T ss_pred             ChHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCcccCCCCC--------c-cccceeeccCCCCCccccCCChHHHHHHH
+Confidence            4567788999999999999999   9999999999987654        2 22233321  1267889999999999987
+
+
+Q sp|P00001|PROT   81 IAA   83 (109)
+Q Consensus        81 l~~   83 (109)
+                      +..
+T Consensus       213 ~~~  215 (592)
+T 6WOM_A          213 MVG  215 (592)
+T ss_dssp             HHT
+T ss_pred             Hhc
+Confidence            655
+
+
+No 55
+>6WOM_C Aspartate--tRNA ligase (E.C.6.1.1.12); SSGCID, Structural Genomics, Elizabethkingia sp.; HET: SO4; 2.15A {Elizabethkingia anophelis}
+Probab=97.22  E-value=3.9e-07  Score=69.30  Aligned_cols=69  Identities=17%  Similarity=0.305  Sum_probs=53.9  Template_Neff=9.400
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKA--LPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~--~~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++..++++++|+.+.+.+|++|   ||.||+||++....++        + ...|...+  ..+..++|++|++.+++++
+T Consensus       142 ~~~~~~~~~~r~~i~~~ir~~l~~~gf~ev~tP~l~~~~~~--------g-~~~~~~~~~~~~~~~~~L~~s~~~~l~~~  212 (592)
+T 6WOM_C          142 RNPVKEKLIFRHKIAQKVRNYLSDQGFIEVETPVLIKSTPE--------G-ARDFVVPSRMNPGQFYALPQSPQTFKQLL  212 (592)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCSS--------S-SCCCEEEESSSTTEEEECCSSSHHHHHHH
+T ss_pred             ChHHHHHHHHHHHHHHHHHHHHHHCCCEEeeCCcccCCCCC--------c-cccceeeccCCCCCccccCCChHHHHHHH
+Confidence            4567788999999999999999   9999999999987654        2 22233321  1267889999999999987
+
+
+Q sp|P00001|PROT   81 IAA   83 (109)
+Q Consensus        81 l~~   83 (109)
+                      +..
+T Consensus       213 ~~~  215 (592)
+T 6WOM_C          213 MVG  215 (592)
+T ss_dssp             HHT
+T ss_pred             Hhc
+Confidence            655
+
+
+No 56
+>4AH6_B ASPARTATE--TRNA LIGASE, MITOCHONDRIAL (E.C.6.1.1.12); LIGASE; 3.7A {HOMO SAPIENS}
+Probab=97.14  E-value=5.9e-07  Score=68.67  Aligned_cols=69  Identities=17%  Similarity=0.292  Sum_probs=53.0  Template_Neff=9.300
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL----GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKA-LPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff----gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~-~~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++...+++++|+.+...+|++|    ||.||+||+|....++        + +..|...+ ..+..++|++|++.+++++
+T Consensus       141 ~~~~~~~l~~r~~~~~~ir~~l~~~~gf~ev~tP~l~~~~~~--------~-~~~~~~~~~~~~~~~~L~~s~~~~~~~~  211 (617)
+T 4AH6_B          141 SFQMQYNLRLRSQMVMKMREYLCNLHGFVDIETPTLFKRTPG--------G-AKEFLVPSREPGKFYSLPQSPQQFKQLL  211 (617)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHCCCCCCSCCEECCCCSSBCCCCS--------S-SCCCEEECSSTTCEEECCSSTTHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHHhcCceEeeCCCccCCCCC--------C-cccceeecCCCCcEEEcCCCHHHHHHHH
+Confidence            4667888999999999999999    7999999999876544        1 22232222 1267789999999999987
+
+
+Q sp|P00001|PROT   81 IAA   83 (109)
+Q Consensus        81 l~~   83 (109)
+                      +..
+T Consensus       212 ~~~  214 (617)
+T 4AH6_B          212 MVG  214 (617)
+T ss_dssp             HHT
+T ss_pred             HhC
+Confidence            665
+
+
+No 57
+>3P8Y_B AsnS-like asparaginyl-tRNA synthetase related protein; asn synthetase bound to Asn; HET: ASN; 1.8A {Pyrococcus abyssi}
+Probab=97.06  E-value=8.4e-07  Score=61.47  Aligned_cols=70  Identities=14%  Similarity=0.121  Sum_probs=54.2  Template_Neff=9.900
+
+Q sp|P00001|PROT    4 AYIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQ-------VKVKALPDAQFEVVHSL   73 (109)
+Q Consensus         4 ~~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~-------f~~~~~~~~~~~L~~S~   73 (109)
+                      ..+++.+.++++|+.+.+.+|++|   ||.||+||++......        .....       +...+. +..++|++|+
+T Consensus         6 ~~~~~~~~~l~~~~~l~~~ir~~~~~~Gf~ei~tP~l~~~~~~--------~~~~~~~~~~~~~~~~~~-~~~~~Lr~s~   76 (294)
+T 3P8Y_B            6 IISRDIYKAIDIQTKILDYMTKFFTDRGFKWLLPIMLSPITDP--------LWPDPAGEGIRPAEVDVY-GVRMRLTHSM   76 (294)
+T ss_dssp             HHTSCCHHHHHHHHHHHHHHHHHHHHTTCEEECCCCEESCCCC--------CCSCTTCCCCCCCEEEET-TEEEEECSCS
+T ss_pred             ecCHHHHHHHHHHHHHHHHHHHHHHHCCCEEcccCeeecCCCC--------CCCCCCCCCCCCcEeecC-CcEEEeecch
+Confidence            357888999999999999999999   9999999999886544        11111       233333 6788999999
+
+
+Q sp|P00001|PROT   74 AKWKRQQIA   82 (109)
+Q Consensus        74 ql~l~~ll~   82 (109)
+                      +.+++++..
+T Consensus        77 ~~~~~~~~~   85 (294)
+T 3P8Y_B           77 ILHKQLAIA   85 (294)
+T ss_dssp             HHHHHHHHH
+T ss_pred             HHHHHHHHH
+Confidence            888877665
+
+
+No 58
+>4O2D_B Aspartate--tRNA ligase (E.C.6.1.1.12); mycobaterium, structural genomics, tRNA synthetase; HET: TRS, ASP; 2.6A {Mycobacterium smegmatis}
+Probab=97.02  E-value=1.1e-06  Score=67.67  Aligned_cols=69  Identities=19%  Similarity=0.238  Sum_probs=54.0  Template_Neff=8.600
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKA--LPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~--~~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        + ...+...+  ..+..++|++|++.+++++
+T Consensus       152 ~~~~~~~l~~rs~l~~~~r~~~~~~GF~eV~tP~l~~~~~~--------g-~~~~~~~~~~~~g~~~~L~~s~~l~l~~~  222 (620)
+T 4O2D_B          152 REGPGNALRLRSKVNAAARSVLAEHDFVEIETPTLTRSTPE--------G-ARDFLVPARLQPGSFYALPQSPQLFKQLL  222 (620)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCCS--------S-SBCCEEECTTSTTCEEECCSCSHHHHHHH
+T ss_pred             CCccHHHHHHHHHHHHHHHHHHHhCCCEEeeCCccccCCCC--------c-cccceeecccCCCCeEecCCCHHHHHHHH
+Confidence            5667889999999999999999   9999999999987654        1 22232222  1267889999999999987
+
+
+Q sp|P00001|PROT   81 IAA   83 (109)
+Q Consensus        81 l~~   83 (109)
+                      +..
+T Consensus       223 l~~  225 (620)
+T 4O2D_B          223 MVA  225 (620)
+T ss_dssp             HHT
+T ss_pred             HHc
+Confidence            654
+
+
+No 59
+>1NNH_A asparaginyl-tRNA synthetase-related peptide; Pyrococcus furiosus, asparaginyl-tRNA synthetase, structural; 1.65A {Pyrococcus furiosus} SCOP: d.104.1.1
+Probab=96.93  E-value=1.6e-06  Score=60.05  Aligned_cols=76  Identities=16%  Similarity=0.182  Sum_probs=54.8  Template_Neff=9.800
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKALPDAQFEVVHSLAKWKRQQI   81 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~~~~~~~L~~S~ql~l~~ll   81 (109)
+                      +++..+.++++|+.+.+.+|++|   ||.||+||++....++..+.... .+...+..++. ++.++|+++++.+++++.
+T Consensus         7 ~~~~~~~~~~~~~~l~~~ir~~f~~~gf~ev~tP~l~~~~~~~~~~~~~-~~~~~~~~~~~-~~~~~L~~s~~~~~~~~~   84 (294)
+T 1NNH_A            7 ISREISPTLDIQTKILEYMTDFFVKEGFKWLLPVIISPITDPLWPDPAG-EGMEPAEVEIY-GVKMRLTHSMILHKQLAI   84 (294)
+T ss_dssp             HTSCCHHHHHHHHHHHHHHHHHHHHTTCEEECCCCEESCCCCCCSCTTC-CCCCCCEEEET-TEEEEECSCSHHHHHHHH
+T ss_pred             hccchHHHHHHHHHHHHHHHHHHHHCCCEEccCcEEccCCCCCCCCCCC-CCCCCceeeec-CceEEEccchHHHHHHHH
+Confidence            57788999999999999999999   99999999998865541111000 00011334444 788999999888887776
+
+
+Q sp|P00001|PROT   82 A   82 (109)
+Q Consensus        82 ~   82 (109)
+                      .
+T Consensus        85 ~   85 (294)
+T 1NNH_A           85 A   85 (294)
+T ss_dssp             H
+T ss_pred             H
+Confidence            5
+
+
+No 60
+>6HHX_A Aspartate--tRNA(Asp) ligase (E.C.6.1.1.12); protein-inhibitor complex, tRNA aminoacylation, LIGASE; HET: G5N; 2.1A {Thermus thermophilus}
+Probab=96.89  E-value=2e-06  Score=65.27  Aligned_cols=69  Identities=16%  Similarity=0.237  Sum_probs=54.1  Template_Neff=9.300
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKA--LPDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~--~~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        + ...+...+  ..+..++|++|++.+++++
+T Consensus       138 ~~~~~~~~~~r~~i~~~ir~~~~~~GF~ev~tP~l~~~~~~--------g-~~~~~~~~~~~~g~~~~L~~s~~~~~~~~  208 (581)
+T 6HHX_A          138 RRRMQENLRLRHRVIKAIWDFLDREGFVQVETPFLTKSTPE--------G-ARDFLVPYRHEPGLFYALPQSPQLFKQML  208 (581)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCCS--------S-SCCCEEECTTSTTCEEECCSCSHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHhCCCEEeeCCcccCCCCc--------c-ccccceeeecCCCceEEcCCCHHHHHHHH
+Confidence            4567789999999999999999   9999999999887654        2 22333332  1267889999999999887
+
+
+Q sp|P00001|PROT   81 IAA   83 (109)
+Q Consensus        81 l~~   83 (109)
+                      +..
+T Consensus       209 ~~~  211 (581)
+T 6HHX_A          209 MVA  211 (581)
+T ss_dssp             HHT
+T ss_pred             HHc
+Confidence            765
+
+
+No 61
+>1EFW_B ASPARTYL-TRNA SYNTHETASE (E.C.6.1.1.12)/ASPARTYL-TRNA COMPLEX; ASPARTYL-TRNA SYNTHETASE, TRNA, PROTEIN-RNA COMPLEX; HET: 5MU, G7M, PSU, H2U, 2MA, QUO, 4SU; 3.0A {Escherichia coli} SCOP: b.40.4.1, d.104.1.1, d.74.4.1
+Probab=96.41  E-value=1.4e-05  Score=60.24  Aligned_cols=69  Identities=16%  Similarity=0.239  Sum_probs=53.4  Template_Neff=9.600
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKAL--PDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~--~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        + ...+...++  .|..++|++|++.+++++
+T Consensus       137 ~~~~~~~~~~r~~i~~~ir~~~~~~Gf~eV~tP~le~~~~~--------g-~~~~~~~~~~~~g~~~~Lr~s~~~~~~~~  207 (580)
+T 1EFW_B          137 RRRMQENLRLRHRVIKAIWDFLDREGFVQVETPFLTKSTPE--------G-ARDFLVPYRHEPGLFYALPQSPQLFKQML  207 (580)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCSS--------S-SCCCEEECTTSTTCEEECCSCSHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHhCCCEEeecccccCCCCc--------c-cccceecccCCCCCeeEccCCHHHHHHHH
+Confidence            4667889999999999999999   9999999999886644        1 222322221  267889999999998887
+
+
+Q sp|P00001|PROT   81 IAA   83 (109)
+Q Consensus        81 l~~   83 (109)
+                      +..
+T Consensus       208 ~~~  210 (580)
+T 1EFW_B          208 MVA  210 (580)
+T ss_dssp             HHT
+T ss_pred             HHc
+Confidence            655
+
+
+No 62
+>1L0W_B Aspartyl-tRNA synthetase (E.C.6.1.1.12); Space-grown crystal, dimeric enzyme, flexible; 2.01A {Thermus thermophilus} SCOP: b.40.4.1, d.104.1.1, d.74.4.1
+Probab=96.41  E-value=1.4e-05  Score=60.24  Aligned_cols=69  Identities=16%  Similarity=0.239  Sum_probs=53.4  Template_Neff=9.600
+
+Q sp|P00001|PROT    6 IAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKAL--PDAQFEVVHSLAKWKRQQ   80 (109)
+Q Consensus         6 ~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~--~~~~~~L~~S~ql~l~~l   80 (109)
+                      ++...+++++|+.+.+.+|++|   ||.||+||++....++        + ...+...++  .|..++|++|++.+++++
+T Consensus       137 ~~~~~~~~~~r~~i~~~ir~~~~~~Gf~eV~tP~le~~~~~--------g-~~~~~~~~~~~~g~~~~Lr~s~~~~~~~~  207 (580)
+T 1L0W_B          137 RRRMQENLRLRHRVIKAIWDFLDREGFVQVETPFLTKSTPE--------G-ARDFLVPYRHEPGLFYALPQSPQLFKQML  207 (580)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHHHHHTTCEECCCCSSBCCCSS--------S-SCCCEEECTTSTTEEEECCSCSHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHHhCCCEEeecccccCCCCc--------c-cccceecccCCCCCeeEccCCHHHHHHHH
+Confidence            4667889999999999999999   9999999999886644        1 222322221  267889999999998887
+
+
+Q sp|P00001|PROT   81 IAA   83 (109)
+Q Consensus        81 l~~   83 (109)
+                      +..
+T Consensus       208 ~~~  210 (580)
+T 1L0W_B          208 MVA  210 (580)
+T ss_dssp             HHT
+T ss_pred             HHc
+Confidence            655
+
+
+No 63
+>3A5Z_C Putative lysyl-tRNA synthetase (E.C.6.1.1.6), Elongation; aminoacyl-tRNA synthetase paralog, Translation, tRNA; HET: KAA; 2.5A {Escherichia coli}
+Probab=96.35  E-value=1.7e-05  Score=55.08  Aligned_cols=72  Identities=11%  Similarity=0.148  Sum_probs=53.2  Template_Neff=10.300
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKAL-----PDAQFEVVHSLAKW   76 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~-----~~~~~~L~~S~ql~   76 (109)
+                      +++.....+++|+.+.+.+|++|   ||.||+||++....+..       .....+...++     .++..+|.++++.+
+T Consensus        11 ~~~~~~~~~~~~~~l~~~ir~~l~~~gf~ev~tP~l~~~~~~~-------~~~~~~~~~~~~~~~~~~~~~~Lr~~~~~~   83 (328)
+T 3A5Z_C           11 QPSASIPNLLKRAAIMAEIRRFFADRGVLEVETPCMSQATVTD-------IHLVPFETRFVGPGHSQGMNLWLMTSPEYH   83 (328)
+T ss_dssp             SCSSCHHHHHHHHHHHHHHHHHHHHTTCEECCCCSEESCCCCC-------TTCCCCEEEECCSSSCCCEEEEECSCSHHH
+T ss_pred             CCCccHHHHHHHHHHHHHHHHHHHHCCcEEeeCCceecCCCCC-------CcccceEEEEeCCCccCCceeeecCChHHH
+Confidence            45666788899999999999999   99999999998865431       11112322221     15678999999999
+
+
+Q sp|P00001|PROT   77 KRQQIAA   83 (109)
+Q Consensus        77 l~~ll~~   83 (109)
+                      +++++..
+T Consensus        84 ~~~~~~~   90 (328)
+T 3A5Z_C           84 MKRLLVA   90 (328)
+T ss_dssp             HHHHHHT
+T ss_pred             HHHHHHc
+Confidence            8887754
+
+
+No 64
+>3A5Y_D Putative lysyl-tRNA synthetase (E.C.6.1.1.6); Aminoacyl-tRNA synthetase paralog, Translation, tRNA; HET: KAA; 1.9A {Escherichia coli}
+Probab=96.31  E-value=1.9e-05  Score=55.48  Aligned_cols=72  Identities=11%  Similarity=0.148  Sum_probs=51.9  Template_Neff=9.900
+
+Q sp|P00001|PROT    5 YIAKQRQISFVKSHFSRQLEERL---GLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKAL-----PDAQFEVVHSLAKW   76 (109)
+Q Consensus         5 ~~~~~~ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~~~~d~l~~~~~~~~f~~~~~-----~~~~~~L~~S~ql~   76 (109)
+                      +++......++|+.+.+.+|++|   ||.||+||++....+..       .....+...++     .++..+|+++++.+
+T Consensus        28 ~~~~~~~~~~~~~~i~~~ir~~~~~~Gf~ei~tP~l~~~~~~~-------~~~~~~~~~~~~~~~~~~~~~~Lr~~~~~~  100 (345)
+T 3A5Y_D           28 QPSASIPNLLKRAAIMAEIRRFFADRGVLEVETPCMSQATVTD-------IHLVPFETRFVGPGHSQGMNLWLMTSPEYH  100 (345)
+T ss_dssp             SCSSCHHHHHHHHHHHHHHHHHHHTTTCEECCCCSEESCCCCC-------TTCCCCEEECC-------CEEEECSCSHHH
+T ss_pred             CCcccHHHHHHHHHHHHHHHHHHHHCCeEEEeCCceecCCCCC-------CcccccEEEEeCCCCcCCceEEeccChhHH
+Confidence            45666788999999999999999   99999999998765431       11112222221     25678999999999
+
+
+Q sp|P00001|PROT   77 KRQQIAA   83 (109)
+Q Consensus        77 l~~ll~~   83 (109)
+                      +.+++..
+T Consensus       101 ~~r~~~~  107 (345)
+T 3A5Y_D          101 MKRLLVA  107 (345)
+T ss_dssp             HHHHHHT
+T ss_pred             HHHHHHc
+Confidence            8877654
+
+
+No 65
+>2ZNJ_A Putative uncharacterized protein (E.C.6.1.1.26); LIGASE; 2.5A {Desulfitobacterium hafniense}
+Probab=60.32  E-value=0.98  Score=29.61  Aligned_cols=31  Identities=16%  Similarity=0.289  Sum_probs=24.9  Template_Neff=10.000
+
+Q sp|P00001|PROT   11 QISFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        11 ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .....+..+.+.+|++|   ||.||.||.+....
+T Consensus        88 ~~~~~~~~~~~~ir~~l~~~Gf~Ev~t~~~~~~~  121 (308)
+T 2ZNJ_A           88 KHRPALLELEEKLAKALHQQGFVQVVTPTIITKS  121 (308)
+T ss_dssp             CCSCHHHHHHHHHHHHHHHTTCEECCCCSEEEHH
+T ss_pred             CCchHHHHHHHHHHHHHHHCCCEEeecCceecHH
+Confidence            34456777888899999   99999999987754
+
+
+No 66
+>7R6O_C tRNA synthetases, tRNA-ligase, tRNA synthetases; HET: EDO; 2.2A {methanogenic archaeon mixed culture ISO4-G1}
+Probab=56.86  E-value=1.2  Score=28.42  Aligned_cols=29  Identities=28%  Similarity=0.502  Sum_probs=23.5  Template_Neff=10.200
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      ...+..+.+.+|+.|   ||.||.||.+....
+T Consensus        59 ~~~~~~~~~~ir~~l~~~Gf~Ev~t~~~~~~~   90 (273)
+T 7R6O_C           59 RNDLTDLENKIREKLAARGFIEVHTPIFVSKS   90 (273)
+T ss_dssp             CCHHHHHHHHHHHHHHHTTCEECCCCSEEEHH
+T ss_pred             CchHHHHHHHHHHHHHHCCCEEccCCceecHH
+Confidence            345667788889999   99999999987754
+
+
+No 67
+>3DSQ_B Pyrrolysyl-tRNA synthetase; homodimer, Aminoacyl-tRNA synthetase, LIGASE; 2.1A {Desulfitobacterium hafniense}
+Probab=56.53  E-value=1.3  Score=28.67  Aligned_cols=31  Identities=16%  Similarity=0.289  Sum_probs=25.0  Template_Neff=10.100
+
+Q sp|P00001|PROT   11 QISFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        11 ai~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .....+..+.+.+|+.|   ||.||.||.+....
+T Consensus        68 ~~~~~~~~~~~~ir~~l~~~Gf~Ev~t~~l~~~~  101 (288)
+T 3DSQ_B           68 KHRPALLELEEKLAKALHQQGFVQVVTPTIITKS  101 (288)
+T ss_dssp             CCSCHHHHHHHHHHHHHHTTTCEECCCCSEEEHH
+T ss_pred             CChhHHHHHHHHHHHHHHHCCCeeccCCceecHH
+Confidence            34556777888899999   99999999988754
+
+
+No 68
+>1KMM_C HISTIDYL-TRNA SYNTHETASE, HISTIDYL-ADENOSINE MONOPHOSPHATE; AMINOACYL-TRNA SYNTHASE, LIGASE, SYNTHETASE; HET: HAM; 2.6A {Escherichia coli} SCOP: c.51.1.1, d.104.1.1
+Probab=54.94  E-value=1.4  Score=29.80  Aligned_cols=29  Identities=21%  Similarity=0.383  Sum_probs=23.5  Template_Neff=10.700
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.||.+.+..
+T Consensus        19 ~~~~~~l~~~~~~~~~~~G~~~v~~p~l~~~~   50 (424)
+T 1KMM_C           19 TAIWQRIEGTLKNVLGSYGYSEIRLPIVEQTP   50 (424)
+T ss_dssp             HHHHHHHHHHHHHHHHTTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCeeccCCcccChH
+Confidence            456677788888888   99999999987654
+
+
+No 69
+>5W6M_A Histidine--tRNA ligase, cytoplasmic (E.C.6.1.1.21); tRNA-synthetase, CMT mutant, LIGASE; 3.696A {Homo sapiens}
+Probab=53.66  E-value=1.5  Score=29.87  Aligned_cols=29  Identities=10%  Similarity=0.147  Sum_probs=24.8  Template_Neff=10.700
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+..
+T Consensus        17 ~~~~~~i~~~~~~~~~~~G~~~v~~p~l~~~~   48 (450)
+T 5W6M_A           17 MAVREKVFDVIIRCFKRHGAEVIDTPVFELKE   48 (450)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEECGG
+T ss_pred             HHHHHHHHHHHHHHHHHcCCccCCCCeEEEHH
+Confidence            467788888899998   99999999988754
+
+
+No 70
+>5ZY9_C Threonyl-tRNA synthase (E.C.6.1.1.3); tRNA, tRNA synthetase, LIGASE; HET: 2CR; 2.5A {Phytophthora sojae}
+Probab=53.36  E-value=1.5  Score=29.14  Aligned_cols=29  Identities=21%  Similarity=0.284  Sum_probs=23.2  Template_Neff=11.100
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.+   ||.+|.+|.+.+..
+T Consensus        30 ~~~~~~l~~~~~~~~~~~g~~~i~~p~l~~~~   61 (406)
+T 5ZY9_C           30 SAIYFKLLKFIREQYRARGYTEVITPNIFNME   61 (406)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECCCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEECcCCcccCch
+Confidence            456777777888887   99999999988743
+
+
+No 71
+>5ZY9_E Threonyl-tRNA synthase (E.C.6.1.1.3); tRNA, tRNA synthetase, LIGASE; HET: 2CR; 2.5A {Phytophthora sojae}
+Probab=53.36  E-value=1.5  Score=29.14  Aligned_cols=29  Identities=21%  Similarity=0.284  Sum_probs=23.2  Template_Neff=11.100
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.+   ||.+|.+|.+.+..
+T Consensus        30 ~~~~~~l~~~~~~~~~~~g~~~i~~p~l~~~~   61 (406)
+T 5ZY9_E           30 SAIYFKLLKFIREQYRARGYTEVITPNIFNME   61 (406)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEEEBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEECcCCcccCch
+Confidence            456777777888887   99999999988743
+
+
+No 72
+>1QE0_A HISTIDYL-TRNA SYNTHETASE (E.C.6.1.1.21); CLASS II TRNA SYNTHETASE, BETA; 2.7A {Staphylococcus aureus} SCOP: c.51.1.1, d.104.1.1
+Probab=52.84  E-value=1.6  Score=29.39  Aligned_cols=30  Identities=23%  Similarity=0.259  Sum_probs=25.2  Template_Neff=10.800
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+.+.+++.|   ||.++.+|.+.+...
+T Consensus        16 ~~~~~~l~~~~~~~~~~~G~~~v~~p~l~~~~~   48 (420)
+T 1QE0_A           16 SKKWRYIENQLDELMTFYNYKEIRTPIFESTDL   48 (420)
+T ss_dssp             HHHHHHHHHHHHHHHHHHTCEECBCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCCeeccCCccCHHH
+Confidence            567788888888888   999999999887654
+
+
+No 73
+>4PHC_A human histidyl-tRNA synthetase, cytoplasmic; aminoacyl-tRNA synthetase, aaRS, HisRS, human; HET: GOL, HIS; 2.844A {Homo sapiens}
+Probab=52.43  E-value=1.6  Score=30.22  Aligned_cols=29  Identities=10%  Similarity=0.147  Sum_probs=24.4  Template_Neff=10.700
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+..
+T Consensus        70 ~~~~~~l~~~~~~~~~~~G~~~v~~P~l~~~~  101 (509)
+T 4PHC_A           70 MAVREKVFDVIIRCFKRHGAEVIDTPVFELKE  101 (509)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCeecCCCcEEeHH
+Confidence            466778888888888   99999999988764
+
+
+No 74
+>1WU7_A Histidyl-tRNA synthetase (E.C.6.1.1.21); LIGASE, structural genomics, dimer; HET: MSE; 2.4A {Thermoplasma acidophilum} SCOP: c.51.1.1, d.104.1.1
+Probab=51.95  E-value=1.6  Score=29.52  Aligned_cols=29  Identities=21%  Similarity=0.257  Sum_probs=24.4  Template_Neff=10.600
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+..
+T Consensus        20 ~~~~~~l~~~l~~~~~~~G~~~v~~p~l~~~~   51 (434)
+T 1WU7_A           20 MDVEKFIFKTAEEAAEAFGFRRIDFPSLEYLD   51 (434)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEETH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCeeCccCceeeHH
+Confidence            567788888888888   99999999987654
+
+
+No 75
+>2EL9_C Histidyl-tRNA synthetase (E.C.6.1.1.21); tRNA, aminoacyl-tRNA synthetase, translation, histidyl-tRNA; HET: HSS; 2.7A {Escherichia coli} SCOP: c.51.1.1, d.104.1.1
+Probab=50.88  E-value=1.8  Score=29.34  Aligned_cols=30  Identities=20%  Similarity=0.326  Sum_probs=24.0  Template_Neff=10.600
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+...
+T Consensus        26 ~~~~~~i~~~~~~~~~~~G~~~v~~p~l~~~~~   58 (431)
+T 2EL9_C           26 TAIWQRIEGTLKNVLGSYGYSEIRLPIVEQTPL   58 (431)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCeecccCCeechHH
+Confidence            456777788888888   999999999876543
+
+
+No 76
+>2I4L_C Proline-tRNA ligase (E.C.6.1.1.15); alpha beta, LIGASE; 2.0A {Rhodopseudomonas palustris}
+Probab=50.17  E-value=1.8  Score=29.38  Aligned_cols=29  Identities=24%  Similarity=0.297  Sum_probs=23.1  Template_Neff=10.800
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+....
+T Consensus        67 ~~~~~~i~~~~~~~~~~~g~~~v~~P~l~~~~   98 (458)
+T 2I4L_C           67 HRVLKKIEQIVREEQNRAGAIELLMPTLQLAD   98 (458)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECCCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCeEccCCcccHHH
+Confidence            456677777788887   99999999987754
+
+
+No 77
+>2I4N_B Proline-tRNA ligase (E.C.6.1.1.15); alpha beta, LIGASE; HET: 5CA; 2.85A {Rhodopseudomonas palustris}
+Probab=50.17  E-value=1.8  Score=29.38  Aligned_cols=29  Identities=24%  Similarity=0.297  Sum_probs=23.1  Template_Neff=10.800
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+....
+T Consensus        67 ~~~~~~i~~~~~~~~~~~g~~~v~~P~l~~~~   98 (458)
+T 2I4N_B           67 HRVLKKIEQIVREEQNRAGAIELLMPTLQLAD   98 (458)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCeEccCCcccHHH
+Confidence            456677777788887   99999999987754
+
+
+No 78
+>3OD1_A ATP phosphoribosyltransferase regulatory subunit; structural genomics, PSI-2, protein structure; HET: BME, PEG, MSE; 1.97A {Bacillus halodurans}
+Probab=49.90  E-value=1.9  Score=29.04  Aligned_cols=29  Identities=21%  Similarity=0.300  Sum_probs=22.8  Template_Neff=10.300
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+.+..+.+.+++.|   ||.+|.||.+.+..
+T Consensus        24 ~~~~~~i~~~~~~~~~~~G~~~v~~p~l~~~~   55 (400)
+T 3OD1_A           24 YKTKKNICDQMTEEINLWGYDMIETPTLEYYE   55 (400)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEECC
+T ss_pred             HHHHHHHHHHHHHHHHHcCCccccCCcEEeHH
+Confidence            456667777778877   99999999987644
+
+
+No 79
+>3OD1_B ATP phosphoribosyltransferase regulatory subunit; structural genomics, PSI-2, protein structure; HET: BME, PEG, MSE; 1.97A {Bacillus halodurans}
+Probab=49.90  E-value=1.9  Score=29.04  Aligned_cols=29  Identities=21%  Similarity=0.300  Sum_probs=22.8  Template_Neff=10.300
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+.+..+.+.+++.|   ||.+|.||.+.+..
+T Consensus        24 ~~~~~~i~~~~~~~~~~~G~~~v~~p~l~~~~   55 (400)
+T 3OD1_B           24 YKTKKNICDQMTEEINLWGYDMIETPTLEYYE   55 (400)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEECC
+T ss_pred             HHHHHHHHHHHHHHHHHcCCccccCCcEEeHH
+Confidence            456667777778877   99999999987644
+
+
+No 80
+>4HWO_B Threonine--tRNA ligase (E.C.6.1.1.3); aminoacyl-tRNA synthetase, protein-inhibitor complex, antibacterial; HET: 409; 1.907A {Escherichia coli}
+Probab=44.12  E-value=2.6  Score=27.83  Aligned_cols=30  Identities=13%  Similarity=0.088  Sum_probs=23.9  Template_Neff=11.200
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+.+.+++.+   ||.+|.+|.+.+...
+T Consensus        32 ~~~~~~l~~~~~~~~~~~g~~~v~~p~l~~~~~   64 (411)
+T 4HWO_B           32 WTIFRELEVFVRSKLKEYQYQEVKGPFMMDRVL   64 (411)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEccCCccCCHHH
+Confidence            466777778888887   999999999887543
+
+
+No 81
+>1EVL_D THREONYL-TRNA SYNTHETASE (E.C.6.1.1.3); Amino acid recognition, zinc ion; HET: TSB; 1.55A {Escherichia coli} SCOP: c.51.1.1, d.104.1.1
+Probab=43.63  E-value=2.7  Score=27.66  Aligned_cols=29  Identities=14%  Similarity=0.136  Sum_probs=24.0  Template_Neff=11.200
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+...+++.+   ||.+|.+|.+.+..
+T Consensus        30 ~~~~~~l~~~~~~~~~~~G~~~i~~p~l~~~~   61 (401)
+T 1EVL_D           30 WTIFRELEVFVRSKLKEYQYQEVKGPFMMDRV   61 (401)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEccCCccCCHH
+Confidence            467788888888888   99999999887644
+
+
+No 82
+>1KOG_G Threonyl-tRNA synthetase (E.C.6.1.1.3)/RNA Complex; Protein-RNA complex, RNA stem-loop, RNA; HET: TSB; 3.5A {Escherichia coli} SCOP: c.51.1.1, d.104.1.1
+Probab=43.63  E-value=2.7  Score=27.66  Aligned_cols=29  Identities=14%  Similarity=0.136  Sum_probs=24.0  Template_Neff=11.200
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+...+++.+   ||.+|.+|.+.+..
+T Consensus        30 ~~~~~~l~~~~~~~~~~~G~~~i~~p~l~~~~   61 (401)
+T 1KOG_G           30 WTIFRELEVFVRSKLKEYQYQEVKGPFMMDRV   61 (401)
+T ss_dssp             HHHHHHHHHHHHHHHHHTCCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEccCCccCCHH
+Confidence            467788888888888   99999999887644
+
+
+No 83
+>4HWT_B Threonine--tRNA ligase, cytoplasmic (E.C.6.1.1.3); aminoacyl-tRNA synthetase, protein-inhibitor complex, Ligase-Ligase; HET: 1B2; 2.3A {Homo sapiens}
+Probab=43.21  E-value=2.8  Score=27.84  Aligned_cols=30  Identities=13%  Similarity=0.235  Sum_probs=24.4  Template_Neff=11.000
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+...
+T Consensus        32 ~~~~~~l~~~~~~~~~~~G~~~v~~p~~~~~~~   64 (413)
+T 4HWT_B           32 AYIYNALIEFIRSEYRKRGFQEVVTPNIFNSRL   64 (413)
+T ss_dssp             HHHHHHHHHHHHHHHHHHTCEECBCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEcccCcccchhH
+Confidence            567778888888888   999999999877543
+
+
+No 84
+>3A31_A Probable threonyl-tRNA synthetase 1 (E.C.6.1.1.3); threonyl-tRNA synthetase, Aeropyrum pernix K1; HET: SO4, MSE; 2.5A {Aeropyrum pernix}
+Probab=42.44  E-value=3  Score=28.92  Aligned_cols=29  Identities=17%  Similarity=0.300  Sum_probs=24.3  Template_Neff=9.800
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+..
+T Consensus        49 ~~~~~~l~~~~~~~~~~~G~~~v~~P~l~~~~   80 (471)
+T 3A31_A           49 GPIRYALAEVLAKFHARRGYYVVETPIIASTE   80 (471)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECCCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEcccCceeCHH
+Confidence            467778888888888   99999999987764
+
+
+No 85
+>3A32_A Probable threonyl-tRNA synthetase 1 (E.C.6.1.1.3); threonyl-tRNA synthetase, Aeropyrum pernix K1; HET: SO4; 2.3A {Aeropyrum pernix}
+Probab=42.44  E-value=3  Score=28.92  Aligned_cols=29  Identities=17%  Similarity=0.300  Sum_probs=24.3  Template_Neff=9.800
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+..
+T Consensus        49 ~~~~~~l~~~~~~~~~~~G~~~v~~P~l~~~~   80 (471)
+T 3A32_A           49 GPIRYALAEVLAKFHARRGYYVVETPIIASTE   80 (471)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECCCCSEEETH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEcccCceeCHH
+Confidence            467778888888888   99999999987764
+
+
+No 86
+>4G84_A Histidine-tRNA ligase, cytoplasmic (E.C.6.1.1.21); synthetase, LIGASE; HET: IMD; 2.4A {Homo sapiens}
+Probab=41.89  E-value=3  Score=28.42  Aligned_cols=29  Identities=10%  Similarity=0.147  Sum_probs=23.8  Template_Neff=10.500
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+..
+T Consensus        28 ~~~~~~v~~~~~~~~~~~G~~~v~~p~l~~~~   59 (464)
+T 4G84_A           28 MAVREKVFDVIIRCFKRHGAEVIDTPVFELKE   59 (464)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCccCCCCeEEEhH
+Confidence            456677788888888   99999999988754
+
+
+No 87
+>4G84_B Histidine-tRNA ligase, cytoplasmic (E.C.6.1.1.21); synthetase, LIGASE; HET: IMD; 2.4A {Homo sapiens}
+Probab=41.89  E-value=3  Score=28.42  Aligned_cols=29  Identities=10%  Similarity=0.147  Sum_probs=23.8  Template_Neff=10.500
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.+|.+|.+.+..
+T Consensus        28 ~~~~~~v~~~~~~~~~~~G~~~v~~p~l~~~~   59 (464)
+T 4G84_B           28 MAVREKVFDVIIRCFKRHGAEVIDTPVFELKE   59 (464)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCccCCCCeEEEhH
+Confidence            456677788888888   99999999988754
+
+
+No 88
+>3RAC_A Histidine-tRNA ligase (E.C.6.1.1.21); Structural Genomics, PSI-Biology, Midwest Center; 2.301A {Alicyclobacillus acidocaldarius subsp. acidocaldarius}
+Probab=39.79  E-value=3.6  Score=27.82  Aligned_cols=30  Identities=13%  Similarity=0.136  Sum_probs=23.8  Template_Neff=9.300
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+...+++.|   ||.+|.+|.+.+...
+T Consensus        37 ~~~~~~v~~~l~~~~~~~G~~~i~~p~l~~~~~   69 (373)
+T 3RAC_A           37 AKRRRAVETRLLSFVEDAGYEPVTSGLFEYVDT   69 (373)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECCCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCeeccCCceeeHHH
+Confidence            456677778888888   999999999876543
+
+
+No 89
+>1NYQ_B threonyl-tRNA synthetase (E.C.6.1.1.3); threonyl-tRNA synthetase, adenylate, LIGASE; HET: TSB; 3.2A {Staphylococcus aureus} SCOP: d.67.1.1, c.51.1.1, d.104.1.1, d.15.10.1
+Probab=39.52  E-value=3.4  Score=29.09  Aligned_cols=29  Identities=21%  Similarity=0.434  Sum_probs=23.8  Template_Neff=11.100
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.+   ||.+|.+|.+.+..
+T Consensus       271 ~~~~~~l~~~~~~~~~~~G~~~i~~P~l~~~~  302 (645)
+T 1NYQ_B          271 ATIRREIERYIVDKEVSMGYDHVYTPVLANVD  302 (645)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCEEeecCCccChh
+Confidence            467777888888888   99999999988754
+
+
+No 90
+>1NYR_B threonyl-tRNA synthetase (E.C.6.1.1.3); threonyl-tRNA synthetase, ATP, threonine, LIGASE; HET: ATP, THR; 2.8A {Staphylococcus aureus} SCOP: d.67.1.1, c.51.1.1, d.104.1.1, d.15.10.1
+Probab=39.52  E-value=3.4  Score=29.09  Aligned_cols=29  Identities=21%  Similarity=0.434  Sum_probs=23.8  Template_Neff=11.100
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.+   ||.+|.+|.+.+..
+T Consensus       271 ~~~~~~l~~~~~~~~~~~G~~~i~~P~l~~~~  302 (645)
+T 1NYR_B          271 ATIRREIERYIVDKEVSMGYDHVYTPVLANVD  302 (645)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCEEeecCCccChh
+Confidence            467777888888888   99999999988754
+
+
+No 91
+>4P3N_C Borrelidin; synthetase, inhibitor, LIGASE-LIGASE INHIBITOR complex; HET: 2CR; 2.6A {Homo sapiens}
+Probab=37.18  E-value=4  Score=27.07  Aligned_cols=29  Identities=14%  Similarity=0.289  Sum_probs=24.1  Template_Neff=10.900
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.|   ||.++.+|.+.+..
+T Consensus        42 ~~~~~~i~~~~~~~~~~~g~~~~~~p~l~~~~   73 (415)
+T 4P3N_C           42 AYIYNALIEFIRSEYRKRGFQEVVTPNIFNSR   73 (415)
+T ss_dssp             HHHHHHHHHHHHHHHHHHTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEcccCcccChh
+Confidence            567788888888888   99999999987654
+
+
+No 92
+>7L3O_B Threonyl-tRNA synthetase (E.C.6.1.1.3); SSGCID, Threonyl-tRNA synthetase, class-II aminoacyl-tRNA; 2.1A {Cryptosporidium parvum (strain Iowa II)}
+Probab=36.26  E-value=4.2  Score=27.31  Aligned_cols=29  Identities=10%  Similarity=0.143  Sum_probs=23.3  Template_Neff=10.700
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+.+.+++.+   ||.+|.+|.+.+..
+T Consensus        42 ~~~~~~l~~~~~~~~~~~G~~~v~~p~l~~~~   73 (442)
+T 7L3O_B           42 ARLYNKLMDFIRNEYRIREFTEVITPNIFSCD   73 (442)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEETH
+T ss_pred             HHHHHHHHHHHHHHHHhCCCEEccCCCcCChh
+Confidence            456677777888888   99999999988754
+
+
+No 93
+>6EZD_D Pyrrolysyl-tRNA synthetase (E.C.6.1.1.26); Pyrrolysyl-tRNA synthetase, ligase; 2.4A {Candidatus Methanomethylophilus alvus Mx1201 1)}
+Probab=35.86  E-value=4.5  Score=26.26  Aligned_cols=24  Identities=29%  Similarity=0.606  Sum_probs=19.8  Template_Neff=9.000
+
+Q sp|P00001|PROT   18 HFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        18 ~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+.+.+|++|   ||.||.||.+....
+T Consensus        65 ~~~~~ir~~L~~~Gf~Ev~t~s~~~~~   91 (283)
+T 6EZD_D           65 QLMNDIADALVAEGFIEVRTPIFISKD   91 (283)
+T ss_dssp             HHHHHHHHHHHHTTCEECCCCSEEEHH
+T ss_pred             HHHHHHHHHHHHCCCeEeecCeeeCHH
+Confidence            4567788888   99999999988764
+
+
+No 94
+>4TTV_B human Threonyl-tRNA synthetase; tRNA, synthetase, inhibitor, macrolide, LIGASE-ANTIBIOTIC; HET: BC9; 2.8A {Homo sapiens}
+Probab=34.26  E-value=4.7  Score=26.64  Aligned_cols=30  Identities=13%  Similarity=0.235  Sum_probs=24.1  Template_Neff=10.900
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+...+++.+   ||.+|.+|.+.+...
+T Consensus        41 ~~~~~~i~~~~~~~~~~~g~~~v~~p~l~~~~~   73 (414)
+T 4TTV_B           41 AYIYNALIEFIRSEYRKRGFQEVVTPNIFNSRL   73 (414)
+T ss_dssp             HHHHHHHHHHHHHHHHHHTCEECBCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEcccCcccChhH
+Confidence            567777788888888   999999999876543
+
+
+No 95
+>6FTT_B ATP phosphoribosyltransferase (E.C.2.4.2.17); ATP phosphoribosyltransferase, HisZG, cold-adapted, transferase; HET: CL, PRP; 2.29A {Psychrobacter arcticus 273-4}
+Probab=30.10  E-value=6.4  Score=26.42  Aligned_cols=29  Identities=21%  Similarity=0.347  Sum_probs=22.8  Template_Neff=9.600
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+.+..+.+.+++.|   ||.+|.+|.+....
+T Consensus        15 ~~~~~~v~~~l~~~~~~~G~~~i~~p~l~~~~   46 (388)
+T 6FTT_B           15 AHKQEVLRHQLTQQLITHGYQLVSPPMIEFTE   46 (388)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEEEECCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCcccCCCceeeHH
+Confidence            455667777777777   99999999988754
+
+
+No 96
+>6FTT_D ATP phosphoribosyltransferase (E.C.2.4.2.17); ATP phosphoribosyltransferase, HisZG, cold-adapted, transferase; HET: CL, PRP; 2.29A {Psychrobacter arcticus 273-4}
+Probab=30.10  E-value=6.4  Score=26.42  Aligned_cols=29  Identities=21%  Similarity=0.347  Sum_probs=22.8  Template_Neff=9.600
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+.+..+.+.+++.|   ||.+|.+|.+....
+T Consensus        15 ~~~~~~v~~~l~~~~~~~G~~~i~~p~l~~~~   46 (388)
+T 6FTT_D           15 AHKQEVLRHQLTQQLITHGYQLVSPPMIEFTE   46 (388)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEEEECCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCcccCCCceeeHH
+Confidence            455667777777777   99999999988754
+
+
+No 97
+>6GIR_A Serine--tRNA ligase, cytoplasmic (E.C.6.1.1.11); tRNA synthetase, protein synthesis, CYTOSOLIC; 2.343A {Arabidopsis thaliana}
+Probab=27.42  E-value=7.5  Score=26.25  Aligned_cols=30  Identities=17%  Similarity=0.161  Sum_probs=22.9  Template_Neff=10.400
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+.+.++++|   ||.+|.+|.+.....
+T Consensus       177 a~l~~~l~~~~~~~~~~~G~~~v~~P~l~~~~~  209 (456)
+T 6GIR_A          177 LMLNQALINFGLTFLKKRGFTGLQPPFFMRKDV  209 (456)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEEECCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHcCCcccCCCcccCHHH
+Confidence            456667777777777   999999998776543
+
+
+No 98
+>5UCM_B Proline--tRNA ligase (E.C.6.1.1.15); SSGCID, ProRS, Proline-tRNA ligase, Structural; 2.6A {Pseudomonas aeruginosa}
+Probab=27.26  E-value=7.7  Score=27.43  Aligned_cols=30  Identities=20%  Similarity=0.221  Sum_probs=23.0  Template_Neff=9.800
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVGD   42 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~~   42 (109)
+                      .+++..+.+.+++.+   ||.++.+|.+.+...
+T Consensus        55 ~~~~~~l~~~~~~~~~~~G~~~i~~p~l~~~~~   87 (579)
+T 5UCM_B           55 LRVLRKVETIVREEMNAAGALEVLMPAVQPAEL   87 (579)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECBCCSEEEHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCeeccCCCcCcHHH
+Confidence            355667777777777   999999998887643
+
+
+No 99
+>1QF6_A THREONYL-TRNA SYNTHETASE/TRNA(THR) COMPLEX (E.C.6.1.1.3); THREONYL-TRNA SYNTHETASE, TRNA(THR), AMP, MRNA; HET: 5MU, AET, G7M, AMP, PSU, H2U; 2.9A {Escherichia coli} SCOP: d.67.1.1, c.51.1.1, d.104.1.1, d.15.10.1
+Probab=25.51  E-value=8.4  Score=26.99  Aligned_cols=29  Identities=14%  Similarity=0.136  Sum_probs=22.9  Template_Neff=10.900
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      .+++..+...+++.|   ||.+|.+|.+.+..
+T Consensus       271 ~~~~~~l~~~~~~~~~~~G~~~v~~p~l~~~~  302 (642)
+T 1QF6_A          271 WTIFRELEVFVRSKLKEYQYQEVKGPFMMDRV  302 (642)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECCCCSEEETH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCEEcccCCcCCHH
+Confidence            456677777788887   99999999887643
+
+
+No 100
+>2J3L_B PROLYL-TRNA SYNTHETASE (E.C.6.1.1.15); BACTERIAL-TYPE PROLYL-TRNA SYNTHETASE, CLASS II; HET: SO4, P5A; 2.3A {ENTEROCOCCUS FAECALIS}
+Probab=24.54  E-value=9.2  Score=26.83  Aligned_cols=29  Identities=17%  Similarity=0.243  Sum_probs=23.3  Template_Neff=10.000
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      ..++..+...+++.+   ||.+|.+|.+.+..
+T Consensus        47 ~~~~~~l~~~~~~~~~~~g~~~v~~p~l~~~~   78 (572)
+T 2J3L_B           47 NRVLEKLKTIMREEFEKIDAVEMLMPALLPAE   78 (572)
+T ss_dssp             HHHHHHHHHHHHHHHHTTTCEECBCCSEEETH
+T ss_pred             HHHHHHHHHHHHHHHHhCCCEECccCccCCHH
+Confidence            456777777888887   99999999988654
+
+
+No 101
+>2J3M_A PROLYL-TRNA SYNTHETASE (E.C.6.1.1.15); BACTERIAL-TYPE PROLYL-TRNA SYNTHETASE, CLASS II; HET: PRI, ATP; 2.3A {ENTEROCOCCUS FAECALIS}
+Probab=24.54  E-value=9.2  Score=26.83  Aligned_cols=29  Identities=17%  Similarity=0.243  Sum_probs=23.3  Template_Neff=10.000
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      ..++..+...+++.+   ||.+|.+|.+.+..
+T Consensus        47 ~~~~~~l~~~~~~~~~~~g~~~v~~p~l~~~~   78 (572)
+T 2J3M_A           47 NRVLEKLKTIMREEFEKIDAVEMLMPALLPAE   78 (572)
+T ss_dssp             HHHHHHHHHHHHHHHHTTTCEECBCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHHhCCCEECccCccCCHH
+Confidence            456777777888887   99999999988654
+
+
+No 102
+>3VBB_E Seryl-tRNA synthetase, cytoplasmic (E.C.6.1.1.11); COILED-COIL, LIGASE; HET: PO4; 2.891A {Homo sapiens}
+Probab=23.50  E-value=10  Score=26.60  Aligned_cols=28  Identities=21%  Similarity=0.393  Sum_probs=22.0  Template_Neff=9.300
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRV   40 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~   40 (109)
+                      .++...+.+.+++.|   ||.+|.+|.+.+.
+T Consensus       201 a~l~~~L~~~~~~~l~~~Gf~~v~~P~~~~~  231 (522)
+T 3VBB_E          201 VFLEQALIQYALRTLGSRGYIPIYTPFFMRK  231 (522)
+T ss_dssp             HHHHHHHHHHHHHHHHTTTCEEEECCSBCCS
+T ss_pred             HHHHHHHHHHHHHHHHHcCCEeeeCCcccCH
+Confidence            455667777777777   9999999987765
+
+
+No 103
+>5ZNJ_A Proline--tRNA ligase (E.C.6.1.1.15); Aminoacyl-tRNA synthetase, Protein biosynthesis, Inhibitor; HET: HFG, ANP; 1.84A {Staphylococcus aureus}
+Probab=21.49  E-value=12  Score=26.37  Aligned_cols=29  Identities=14%  Similarity=0.301  Sum_probs=22.0  Template_Neff=9.700
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      ..++..+.+.+++.+   ||.+|.+|.+.+..
+T Consensus        47 ~~~~~~l~~~~~~~~~~~G~~ev~~P~l~~~~   78 (567)
+T 5ZNJ_A           47 TRVLNNITAIVRQEMERIDSVEILMPALQQAE   78 (567)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCEECCCCSEEEHH
+T ss_pred             HHHHHHHHHHHHHHHhcCCCeeCcccccCcHH
+Confidence            345667777777777   99999999877643
+
+
+No 104
+>1WLE_B Seryl-tRNA synthetase (E.C.6.1.1.11); LIGASE; HET: SRP; 1.65A {Bos taurus}
+Probab=21.32  E-value=12  Score=25.92  Aligned_cols=28  Identities=18%  Similarity=0.227  Sum_probs=21.7  Template_Neff=9.600
+
+Q sp|P00001|PROT   14 FVKSHFSRQLEERL---GLIEVQAPILSRVG   41 (109)
+Q Consensus        14 riRs~l~~~iR~ff---gFlEV~tPiL~~~~   41 (109)
+                      ++...+...+++++   ||.+|.+|.+.+..
+T Consensus       220 ~l~~~L~~~~~~~l~~~G~~~v~~P~l~~~~  250 (501)
+T 1WLE_B          220 LLQHGLVNFTLNKLIHRGFTPMTVPDLLRGV  250 (501)
+T ss_dssp             HHHHHHHHHHHHHHHHTTCEEEECCSEECHH
+T ss_pred             HHHHHHHHHHHHHHHHCCCccccCCccccch
+Confidence            55666777777777   99999999887754
+
+
+No 105
+>3QNE_A Seryl-tRNA synthetase, cytoplasmic (E.C.6.1.1.11); amino acid biosynthesis, CTG-clade, codon; 2.0A {Candida albicans}
+Probab=20.08  E-value=13  Score=25.33  Aligned_cols=28  Identities=21%  Similarity=0.328  Sum_probs=21.2  Template_Neff=10.100
+
+Q sp|P00001|PROT   13 SFVKSHFSRQLEERL---GLIEVQAPILSRV   40 (109)
+Q Consensus        13 ~riRs~l~~~iR~ff---gFlEV~tPiL~~~   40 (109)
+                      .++...+.+.+++++   ||.+|.+|.+.+.
+T Consensus       185 a~l~~~l~~~~~~~~~~~G~~~v~~P~l~~~  215 (485)
+T 3QNE_A          185 VFLNQALINYGLSFLSSKGYVPLQAPVMMNK  215 (485)
+T ss_dssp             HHHHHHHHHHHHHHHHTTTCEEEECCSEEEH
+T ss_pred             HHHHHHHHHHHHHHHHhcCCccccccccccH
+Confidence            345566667777777   9999999988765
+
+

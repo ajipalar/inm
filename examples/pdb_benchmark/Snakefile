@@ -1,0 +1,224 @@
+# examples/pdb_benchmark/Snakefile
+# PDB PPI benchmark regeneration pipeline.
+#
+# Regenerates the direct/cocomplex benchmark edge lists consumed by
+# examples/cullin_example's ROC evaluation, from the cullin AP-MS prey list
+# through UniProt sequences -> HHblits/PDB70 -> PDB structures -> BSASA ->
+# benchmark edge lists.
+#
+# Prerequisites (not installed by this Snakefile):
+#   - HHblits (HH-suite) on PATH, and a local PDB70 HHblits database
+#     (config: hhblits.db_path)
+#   - A local PDB mirror (config: pdb_mirror_path) or manually-placed .cif
+#     files under data/significant_cifs/ — fetch_structures only converts
+#     CIFs already on disk, it does not fetch from RCSB itself
+#   - Network access to UniProt (fetch-sequences) and to the publisher
+#     (fetch_cullin; falls back to manual-download instructions if blocked)
+#
+# Usage:
+#   cd examples/pdb_benchmark && snakemake -j4
+#     -> regenerates data/direct_benchmark.tsv and data/cocomplex_benchmark.tsv
+#        in this example's own sandbox; does not touch the tracked repo copy.
+#   snakemake publish_benchmark
+#     -> overwrites the tracked benchmark TSVs in
+#        data/processed/references/pdb_ppi_prediction/ with the regenerated
+#        ones. Separate, explicit step since that's shared/tracked state.
+
+configfile: "config.yaml"
+
+CONFIG_FILE = "config.yaml"
+OUT = "data"
+CANONICAL_DIR = "../../data/processed/references/pdb_ppi_prediction"
+
+
+rule all:
+    input:
+        f"{OUT}/direct_benchmark.tsv",
+        f"{OUT}/cocomplex_benchmark.tsv",
+    message:
+        "PDB PPI benchmark regenerated under data/. Run "
+        "`snakemake publish_benchmark` to overwrite the tracked TSVs."
+
+
+rule fetch_cullin:
+    """Download the cullin AP-MS xlsx (Wan et al. 2019)."""
+    output:
+        config["xlsx_path"],
+    params:
+        config_file=CONFIG_FILE,
+    shell:
+        "python scripts/fetch_cullin.py {params.config_file} $(dirname {output})"
+
+
+rule parse_apms:
+    """Parse the cullin xlsx into a deduplicated prey table."""
+    input:
+        xlsx=config["xlsx_path"],
+        config_file=CONFIG_FILE,
+    output:
+        f"{OUT}/prey_table.csv",
+    params:
+        out=OUT,
+    shell:
+        "python -m inm.preprocess parse-apms "
+        "--config {input.config_file} --output-dir {params.out}"
+
+
+rule fetch_sequences:
+    """Fetch UniProt FASTA sequences for every prey."""
+    input:
+        f"{OUT}/prey_table.csv",
+    output:
+        touch(f"{OUT}/.sentinels/fetch_sequences.done"),
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess fetch-sequences "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule add_sequences:
+    """Add UniprotSeq/UniprotSeqLen columns to prey_table.csv in place."""
+    input:
+        f"{OUT}/prey_table.csv",
+        f"{OUT}/.sentinels/fetch_sequences.done",
+    output:
+        touch(f"{OUT}/.sentinels/add_sequences.done"),
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess add-sequences "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule run_hhblits:
+    """Search each prey sequence against PDB70 via HHblits."""
+    input:
+        f"{OUT}/.sentinels/add_sequences.done",
+    output:
+        touch(f"{OUT}/.sentinels/run_hhblits.done"),
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess run-hhblits "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule parse_hhr:
+    """Parse HHblits .hhr output into a flat alignment table."""
+    input:
+        f"{OUT}/.sentinels/run_hhblits.done",
+    output:
+        f"{OUT}/hhblits_out/PreyPDB70PairAlign.csv",
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess parse-hhr "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule filter_hits:
+    """Filter HHblits hits by evalue / aligned columns / identity."""
+    input:
+        f"{OUT}/hhblits_out/PreyPDB70PairAlign.csv",
+    output:
+        f"{OUT}/hhblits_out/SignificantPreyPDB70PairAlign.csv",
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess filter-hits "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule fetch_structures:
+    """Convert significant-hit PDB CIFs to biological-assembly MMTF.
+
+    Requires the CIFs to already be present in data/significant_cifs/ or
+    reachable via config.pdb_mirror_path — this step does not fetch from
+    RCSB itself.
+    """
+    input:
+        f"{OUT}/hhblits_out/SignificantPreyPDB70PairAlign.csv",
+    output:
+        touch(f"{OUT}/.sentinels/fetch_structures.done"),
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess fetch-structures "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule chain_mapping:
+    """Align prey sequences to PDB chain sequences."""
+    input:
+        f"{OUT}/.sentinels/fetch_structures.done",
+    output:
+        f"{OUT}/significant_cifs/chain_mapping_all.csv",
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess chain-mapping "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule compute_bsasa:
+    """Compute buried SASA for every chain pair in every structure."""
+    input:
+        f"{OUT}/.sentinels/fetch_structures.done",
+    output:
+        f"{OUT}/significant_cifs/bsasa.csv",
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess compute-bsasa "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule build_reference:
+    """Cross prey-chain mappings with BSASA into a prey-prey reference table."""
+    input:
+        f"{OUT}/significant_cifs/chain_mapping_all.csv",
+        f"{OUT}/significant_cifs/bsasa.csv",
+    output:
+        f"{OUT}/significant_cifs/BSASA_reference.csv",
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess build-reference "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule build_benchmark:
+    """Derive direct/cocomplex benchmark edge lists from the BSASA reference."""
+    input:
+        f"{OUT}/significant_cifs/BSASA_reference.csv",
+    output:
+        direct=f"{OUT}/direct_benchmark.tsv",
+        cocomplex=f"{OUT}/cocomplex_benchmark.tsv",
+    params:
+        config_file=CONFIG_FILE,
+        out=OUT,
+    shell:
+        "python -m inm.preprocess build-benchmark "
+        "--config {params.config_file} --output-dir {params.out}"
+
+
+rule publish_benchmark:
+    """Overwrite the tracked benchmark TSVs with the regenerated ones."""
+    input:
+        direct=f"{OUT}/direct_benchmark.tsv",
+        cocomplex=f"{OUT}/cocomplex_benchmark.tsv",
+    output:
+        direct=f"{CANONICAL_DIR}/direct_benchmark.tsv",
+        cocomplex=f"{CANONICAL_DIR}/cocomplex_benchmark.tsv",
+    shell:
+        "cp {input.direct} {output.direct} && cp {input.cocomplex} {output.cocomplex}"
