@@ -155,8 +155,8 @@ results/{model_name}/
 
 Convergence and mixing are assessed two ways, both in `inm.postprocess.convergence`:
 
-- **R-hat** (`rhat_upper_triangle`, `rhat_ranked`) — Gelman-Rubin statistic per edge and top-10 highest across all sampled parameters. Values near 1.0 indicate the chains agree; `> 1.1` is the conventional cutoff.
-- **Effective sample size** (`ess_upper_triangle`, `ess_ranked`) — how many independent draws the autocorrelated chain is worth, per edge and bottom-10 lowest across all parameters. Figures flag edges below 10% of total draws.
+- **R-hat** (`rhat_lower_triangle`, `rhat_ranked`) — Gelman-Rubin statistic per edge and top-10 highest across all sampled parameters. Values near 1.0 indicate the chains agree; `> 1.1` is the conventional cutoff.
+- **Effective sample size** (`ess_lower_triangle`, `ess_ranked`) — how many independent draws the autocorrelated chain is worth, per edge and bottom-10 lowest across all parameters. Figures flag edges below 10% of total draws.
 
 Both operate on the `(num_chains, num_samples, ...)` arrays NumPyro returns from a single multi-chain `MCMC.run` call — see `config.yaml`'s `model.num_chains`.
 
